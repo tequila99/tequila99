@@ -1,0 +1,12 @@
+.nav ul {
+  display: flex; }
+  .nav ul li {
+    padding-right: 24px; }
+    .nav ul li :last-child {
+      padding-right: none; }
+    .nav ul li a {
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none; }
+
+/*# sourceMappingURL=nav.css.map */

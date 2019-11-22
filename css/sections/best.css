@@ -1,4 +1,64 @@
 .best {
-  background-color: #000;
+  background-color: #fff;
+  color: #0d0d0d;
   height: 650px;
   position: relative; }
+  .best__header {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center; }
+    .best__header-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 450px; }
+  .best__header-label {
+    margin: auto;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .best__header-caption {
+    margin-top: 23px;
+    color: #666;
+    font-size: 18px;
+    margin-top: 23px;
+    text-align: center; }
+  .best__content {
+    margin-top: 57px;
+    display: flex;
+    justify-content: center; }
+    .best__content ul {
+      display: flex; }
+      .best__content ul li {
+        max-width: 278px;
+        margin-right: 81px;
+        display: flex;
+        align-items: center;
+        position: relative; }
+        .best__content ul li:last-child {
+          margin-right: 0px; }
+          .best__content ul li:last-child:after {
+            content: '';
+            background: none; }
+        .best__content ul li:after {
+          content: '';
+          background: url("/img/best/1.png");
+          position: absolute;
+          right: -75px;
+          width: 67px;
+          height: 21px; }
+  .best__rasp {
+    position: absolute;
+    top: 444px;
+    left: 0;
+    width: 161px;
+    height: 315px;
+    background: url("/img/best/rasb.png") no-repeat; }
+  .best__leaf {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    width: 191px;
+    height: 314px;
+    background: url("/img/best/leaf.png") no-repeat; }
+
+/*# sourceMappingURL=best.css.map */

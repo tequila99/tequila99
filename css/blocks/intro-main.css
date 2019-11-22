@@ -1,0 +1,17 @@
+.intro-main {
+  display: flex;
+  flex-direction: column; }
+  .intro-main h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase; }
+  .intro-main__caption {
+    font-size: 21px;
+    width: 90%;
+    margin-top: 22px; }
+  .intro-main .button {
+    width: 40%;
+    margin-top: 32px; }
+
+/*# sourceMappingURL=intro-main.css.map */

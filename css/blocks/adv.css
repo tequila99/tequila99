@@ -1,4 +1,21 @@
 .adv ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
+  .adv ul li {
+    margin-right: 46px; }
+    .adv ul li :last-child {
+      margin-right: 0px; }
+.adv__item {
+  display: flex; }
+  .adv__item-img {
+    min-width: 52px;
+    min-height: 52px;
+    display: flex;
+    margin-right: 7px; }
+    .adv__item-img--natural {
+      background: url("/img/intro/icon_natural.png") center center no-repeat; }
+    .adv__item-img--deliver {
+      background: url("/img/intro/icon_delver.png") center center no-repeat; }
+    .adv__item-img--fit {
+      background: url("/img/intro/icon_fit.png") center center no-repeat; }
+
+/*# sourceMappingURL=adv.css.map */
