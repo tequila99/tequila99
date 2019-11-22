@@ -1,0 +1,50 @@
+.intro {
+  background-color: #61c4d9;
+  height: 650px;
+  position: relative; }
+  .intro__header {
+    display: flex; }
+  .intro__butt {
+    position: absolute;
+    top: 55px;
+    right: 28px;
+    width: 503px;
+    height: 523px;
+    background: url("/img/intro/butt.png"); }
+  .intro__berr-1 {
+    position: absolute;
+    top: 404px;
+    right: 230px;
+    width: 220px;
+    height: 208px;
+    background: url("/img/intro/berr-1.png"); }
+  .intro__berr-2 {
+    position: absolute;
+    top: 589px;
+    right: 89px;
+    width: 111px;
+    height: 108px;
+    background: url("/img/intro/berr-2.png"); }
+  .intro__leaf-1 {
+    position: absolute;
+    top: 355px;
+    right: 17px;
+    width: 236px;
+    height: 203px;
+    background: url("/img/intro/leaf-1.png"); }
+  .intro__leaf-2 {
+    position: absolute;
+    top: 574px;
+    right: 290px;
+    width: 141px;
+    height: 105px;
+    background: url("/img/intro/leaf-2.png"); }
+  .intro__leaf-3 {
+    position: absolute;
+    top: 590px;
+    left: 30px;
+    width: 59px;
+    height: 112px;
+    background: url("/img/intro/leaf-3.png"); }
+
+/*# sourceMappingURL=intro.css.map */

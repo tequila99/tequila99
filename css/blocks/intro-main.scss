@@ -1,0 +1,17 @@
+.intro-main {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  &__caption {
+    font-size: 21px;
+    width: 90%;
+  }
+  button {
+    align-items: flex-start;
+  }
+}
