@@ -1,0 +1,29 @@
+.adv {
+  ul {
+    display: flex;
+    li {
+      margin-right: 46px;
+      :last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    &-img {
+      min-width: 52px;
+      min-height: 52px;
+      display: flex;
+      margin-right: 7px;;
+      &--natural {
+        background: url('/img/intro/icon_natural.png') center center  no-repeat;
+      }
+      &--deliver {
+        background: url('/img/intro/icon_delver.png') center center no-repeat;
+      }
+      &--fit {
+        background: url('/img/intro/icon_fit.png') center center no-repeat;
+      }
+    }
+  }
+}

@@ -10,8 +10,10 @@
   &__caption {
     font-size: 21px;
     width: 90%;
+    margin-top: 22px;
   }
-  button {
-    align-items: flex-start;
+  .button {
+    width: 40%;
+    margin-top: 32px;
   }
 }

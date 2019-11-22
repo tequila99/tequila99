@@ -13,7 +13,12 @@ body {
   min-width: 1100px;
   min-height: 100px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
 
 ul, h1, h2, h3, h4, h5, p {
@@ -23,6 +28,10 @@ ul, h1, h2, h3, h4, h5, p {
 ul li {
   list-style: none; }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .intro {
   background-color: #61c4d9;
   height: 650px;
@@ -30,10 +39,33 @@ ul li {
   .intro__header {
     height: 62px;
     padding-left: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
+    .intro__header-logo {
+      margin-right: 45px;
+      margin-top: 24px; }
+    .intro__header-menu {
+      margin-right: 45px;
+      margin-top: 36px; }
+    .intro__header-contacts {
+      margin-top: 36px; }
   .intro__content {
     width: 404px;
-    margin-left: 80px; }
+    margin-left: 80px;
+    margin-top: 100px; }
+  .intro__footer {
+    margin-top: 72px;
+    margin-left: 80px;
+    margin-bottom: 47px;
+    max-width: 500px; }
+  .intro__patt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 512px;
+    height: 648px;
+    background: url("/img/intro/patt.png"); }
   .intro__butt {
     position: absolute;
     top: 55px;
@@ -77,16 +109,112 @@ ul li {
     height: 112px;
     background: url("/img/intro/leaf-3.png"); }
 
+.best {
+  background-color: #fff;
+  color: #0d0d0d;
+  height: 650px;
+  position: relative; }
+  .best__header {
+    margin-top: 115px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .best__header-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      max-width: 450px; }
+  .best__header-label {
+    margin: auto;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .best__header-caption {
+    margin-top: 23px;
+    color: #666;
+    font-size: 18px;
+    margin-top: 23px;
+    text-align: center; }
+  .best__content {
+    margin-top: 57px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .best__content ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .best__content ul li {
+        max-width: 278px;
+        margin-right: 81px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative; }
+        .best__content ul li:last-child {
+          margin-right: 0px; }
+          .best__content ul li:last-child:after {
+            content: '';
+            background: none; }
+        .best__content ul li:after {
+          content: '';
+          background: url("/img/best/1.png");
+          position: absolute;
+          right: -75px;
+          width: 67px;
+          height: 21px; }
+  .best__rasp {
+    position: absolute;
+    top: 444px;
+    left: 0;
+    width: 161px;
+    height: 315px;
+    background: url("/img/best/rasb.png") no-repeat; }
+  .best__leaf {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    width: 191px;
+    height: 314px;
+    background: url("/img/best/leaf.png") no-repeat; }
+
 .logo {
   width: 53px;
   height: 38px;
   background: url("/img/intro/logo.png") center center/cover; }
 
 .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
+  .menu ul li {
+    padding-right: 45px; }
+    .menu ul li :last-child {
+      padding-right: none; }
+    .menu ul li a {
+      font-size: 18px;
+      color: #fff; }
 
 .intro-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
   .intro-main h1 {
     font-weight: 700;
@@ -95,16 +223,129 @@ ul li {
     text-transform: uppercase; }
   .intro-main__caption {
     font-size: 21px;
-    width: 90%; }
-  .intro-main button {
-    align-items: flex-start; }
+    width: 90%;
+    margin-top: 22px; }
+  .intro-main .button {
+    width: 40%;
+    margin-top: 32px; }
 
 .button {
   background-color: #fff;
-  border-radius: 20px; }
+  border-radius: 40px;
+  padding: 18px 15px; }
   .button__label {
+    padding: 0px;
+    margin: 0px;
     color: #0f5a47;
     text-transform: uppercase;
-    font-size: 19px; }
+    font-size: 19px;
+    font-weight: 700; }
 
-/*# sourceMappingURL=main.css.map */
+.contact-phone {
+  font-family: "Alegreya Sans";
+  font-size: 24px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .contact-phone:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+    background: url("/img/intro/phone.png") center center/contain no-repeat; }
+
+.adv ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .adv ul li {
+    margin-right: 46px; }
+    .adv ul li :last-child {
+      margin-right: 0px; }
+
+.adv__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .adv__item-img {
+    min-width: 52px;
+    min-height: 52px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 7px; }
+    .adv__item-img--natural {
+      background: url("/img/intro/icon_natural.png") center center no-repeat; }
+    .adv__item-img--deliver {
+      background: url("/img/intro/icon_delver.png") center center no-repeat; }
+    .adv__item-img--fit {
+      background: url("/img/intro/icon_fit.png") center center no-repeat; }
+
+.best-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .best-item__header-img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f2f5f4;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .best-item__header-img--useful:after {
+      content: '';
+      width: 70px;
+      height: 70px;
+      margin: auto;
+      background: url("/img/best/useful.png") no-repeat; }
+    .best-item__header-img--tasty:after {
+      content: '';
+      width: 74px;
+      height: 74px;
+      margin: auto;
+      background: url("/img/best/tasty.png") no-repeat; }
+    .best-item__header-img--nutrient:after {
+      content: '';
+      width: 74px;
+      height: 74px;
+      margin: auto;
+      background: url("/img/best/nutrient.png") no-repeat; }
+  .best-item__content {
+    margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .best-item__content-label {
+      color: #000;
+      font-size: 27px;
+      font-weight: 700; }
+    .best-item__content-caption {
+      color: #666;
+      text-align: center;
+      font-weight: 300;
+      font-size: 18px;
+      margin-top: 30px; }

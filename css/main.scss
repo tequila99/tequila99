@@ -28,8 +28,16 @@ ul,h1,h2,h3,h4,h5,p {
 ul li {
   list-style: none;
 }
+* {
+  box-sizing: border-box;
+}
+
 @import './sections/intro.scss';
+@import './sections/best.scss';
 @import './blocks/logo.scss';
 @import './blocks/menu.scss';
 @import './blocks/intro-main.scss';
 @import './blocks/button.scss';
+@import './blocks/contact-phone.scss';
+@import './blocks/adv.scss';
+@import './blocks/best-item.scss';

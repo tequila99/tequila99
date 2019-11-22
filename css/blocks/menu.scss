@@ -1,5 +1,15 @@
 .menu {
   ul {
     display: flex;
+    li {
+      padding-right: 45px;
+      :last-child {
+        padding-right: none;
+      }
+      a {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
   }
 }

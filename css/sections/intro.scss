@@ -8,10 +8,36 @@ $height: 650px;
     height: 62px;
     padding-left: 80px; 
     display: flex;
-  }
+    &-logo {
+      margin-right: 45px;
+      margin-top: 24px;
+    }
+    &-menu {
+      margin-right: 45px;
+      margin-top: 36px;
+    }
+    &-contacts {
+      margin-top: 36px;
+    }
+  }  
   &__content {
     width: 404px;
     margin-left: 80px;
+    margin-top: 100px;
+  }
+  &__footer {
+    margin-top: 72px;
+    margin-left: 80px;
+    margin-bottom: 47px;
+    max-width: 500px;
+  }
+  &__patt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 512px;
+    height: 648px;
+    background: url('/img/intro/patt.png');
   }
   &__butt {
     position: absolute;

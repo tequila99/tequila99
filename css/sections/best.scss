@@ -1,0 +1,80 @@
+$bg: #fff;
+$color: #0d0d0d;
+$height: 650px;
+.best {
+  background-color: $bg;
+  color: $color;
+  height: $height;
+  position: relative;
+  &__header {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+    }
+  }
+  &__header-label {
+    margin: auto;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__header-caption {
+    margin-top: 23px;
+    color: #666;
+    font-size: 18px;
+    margin-top: 23px;
+    text-align: center;
+  }
+  &__content {
+    margin-top: 57px;
+    display: flex;
+    justify-content: center;
+    
+    ul {
+      display: flex;
+      li {
+        max-width: 278px;
+        margin-right: 81px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:last-child {
+          margin-right: 0px;
+          &:after {
+            content: '';
+            background: none;
+          }
+        }
+        &:after {
+          content: '';
+          background: url('/img/best/1.png');
+          position: absolute;
+          right: -75px;
+          width: 67px;
+          height: 21px;
+        }
+
+      }
+    }
+  }
+  &__rasp {
+    position: absolute;
+    top: 444px;
+    left: 0;
+    width: 161px;
+    height: 315px;
+    background: url('/img/best/rasb.png') no-repeat;    
+  }
+  &__leaf {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    width: 191px;
+    height: 314px;
+    background: url('/img/best/leaf.png') no-repeat;    
+  }  
+}
