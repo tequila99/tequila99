@@ -1,21 +1,16 @@
-.header {
+.footer {
   width: 100%;
   position: absolute;
-  top: 35px;
+  bottom: 0px;
   left: 0px;
   // background: #61c4d9;
-  background: transparent;
+  background: #fff;
+  height: 93px;
   display: flex;
   align-items: center;
   z-index: 1;
   &__container {
     margin: 0 auto;
     display: flex;
-  }
-  &__logo {
-    margin-right: 45px;
-  }
-  &__menu {
-    margin-right: 45px;
   }
 }
