@@ -1,0 +1,22 @@
+.team {
+  background-color: #fff;
+  color: #0d0d0d;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .team__container {
+    margin: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .team:after {
+    content: '';
+    position: absolute;
+    top: -237px;
+    right: 0px;
+    width: 196px;
+    height: 578px;
+    z-index: 1;
+    background: url("/img/team/background.png") no-repeat; }

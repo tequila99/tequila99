@@ -1,0 +1,36 @@
+.team-member {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  &__img {
+    margin: auto;
+    display: flex;
+    img {
+      margin: auto;
+    }
+  }
+  &__content {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h5 {
+      color: #323232;
+      font-size: 21px;
+      font-weight: 500;
+    }
+    div {
+      color: #281e1e;
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 13px;
+    }
+    p {
+      text-align: center;
+      color: #666;
+      font-size: 18px;
+      font-weight: 300;
+      margin-top: 3px;
+    }
+  }
+}

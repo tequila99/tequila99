@@ -1,0 +1,40 @@
+.review {
+  background-color: #fff;
+  color: #0d0d0d;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .review:after {
+    content: '';
+    position: absolute;
+    bottom: -159px;
+    left: 0px;
+    width: 139px;
+    height: 321px;
+    background: url("/img/review/background.png") no-repeat; }
+  .review:before {
+    content: '';
+    position: absolute;
+    top: 36px;
+    right: 14px;
+    width: 150px;
+    height: 86px;
+    background: url("/img/review/berry.png"); }
+  .review__container {
+    margin: auto auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid grey; }
+  .review__header {
+    margin: 0 auto; }
+    .review__header h3 {
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase; }

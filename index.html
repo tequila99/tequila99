@@ -1,176 +1,327 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Батончики</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Батончики</title>
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/main.css">
-</head>
-
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="container header__container">
-        <div class="header__logo">
-          <div class="logo"></div>
-        </div>
-        <div class="header__menu">
-          <nav class='nav'>
-            <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Батончики</a></li>
-              <li><a href="#">Команда</a></li>
-              <li><a href="#">Меню</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Как мы работаем</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__contacts">
-          <div class="contact-phone">8 800 903 90 90</div>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <section class="section intro">
-        <div class="container intro__container">
-          <img src="/img/intro/main.png" alt="" class="intro__img intro__img--main">
-          <!-- <div class="intro__butt">
-          </div> -->
-          <img src="/img/intro/berr-1.png" alt="" class="intro__img intro__img--berr-1">
-          <img src="/img/intro/berr-2.png" alt="" class="intro__img intro__img--berr-2">
-          <img src="/img/intro/leaf-1.png" alt="" class="intro__img intro__img--leaf-1">
-          <img src="/img/intro/leaf-2.png" alt="" class="intro__img intro__img--leaf-2">
-          <img src="/img/intro/leaf-3.png" alt="" class="intro__img intro__img--leaf-3">
-          <!-- <div class="intro__berr-1">
-          </div> -->
-          <!-- <div class="intro__berr-2">
-          </div> -->
-          <!-- <div class="intro__leaf-1"></div> -->
-          <!-- <div class="intro__leaf-2"></div>
-          <div class="intro__leaf-3"></div> -->
-          <div class="intro__content">
-            <div class="intro-main">
-              <h1>Натуральные шоколадные батончики</h1>
-              <div class='intro-main__caption'>
-                Наши батончики идеально подходят для тех, кто следит за своим здоровьем
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <section class="section intro">
+          <header class="header">
+            <div class="container header__container">
+              <div class="header__logo">
+                <div class="logo"></div>
               </div>
-              <button type="submit" class='button'>
-                <div class="button__label">Заказать</div>
-
-              </button>
+              <div class="header__menu">
+                <nav class="nav">
+                  <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Батончики</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Как мы работаем</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header__contacts">
+                <div class="contact-phone">8 800 903 90 90</div>
+              </div>
+            </div>
+          </header>
+          <div class="container intro__container">
+            <img
+              src="/img/intro/main.png"
+              alt=""
+              class="intro__img intro__img--main"
+            />
+            <div class="intro__content">
+              <div class="intro-main">
+                <h1>Натуральные шоколадные батончики</h1>
+                <div class="intro-main__caption">
+                  Наши батончики идеально подходят для тех, кто следит за своим
+                  здоровьем
+                </div>
+                <button type="submit" class="button">
+                  <div class="button__label">Заказать</div>
+                </button>
+              </div>
+            </div>
+            <div class="intro__footer">
+              <div class="adv">
+                <ul>
+                  <li>
+                    <div class="adv__item">
+                      <div class="adv__item-img adv__item-img--natural"></div>
+                      <div class="adv__item-label">
+                        100% натуральный продукт
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="adv__item">
+                      <div class="adv__item-img adv__item-img--deliver"></div>
+                      <div class="adv__item-label">3-5 дней доставка по РФ</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="adv__item">
+                      <div class="adv__item-img adv__item-img--fit"></div>
+                      <div class="adv__item-label">Не портит фигуру</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="intro__footer">
-            <div class="adv">
+        </section>
+        <section class="section best">
+          <div class="container best__container">
+            <div class="best__header">
+              <div class="best__header-content">
+                <h2 class="best__header-label">Почему CHOCCO?</h2>
+                <div class="best__header-caption">
+                  В нашем мире все происходит очень быстро, поэтому мы делаем
+                  батончики, которые удобно взять с собой.
+                </div>
+              </div>
+            </div>
+            <div class="best__content">
               <ul>
                 <li>
-                  <div class="adv__item">
-                    <div class="adv__item-img adv__item-img--natural">
-
+                  <div class="best-item">
+                    <div class="best-item__header">
+                      <div
+                        class="best-item__header-img best-item__header-img--useful"
+                      ></div>
                     </div>
-                    <div class="adv__item-label">100% натуральный продукт</div>
+                    <div class="best-item__content">
+                      <h2 class="best-item__content-label">Полезно</h2>
+                      <div class="best-item__content-caption">
+                        Натуральность - ключевое качество нашей продукции. Мы
+                        используем только природные ингредиенты.
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li>
-                  <div class="adv__item">
-                    <div class="adv__item-img adv__item-img--deliver">
-
+                  <div class="best-item">
+                    <div class="best-item__header">
+                      <div
+                        class="best-item__header-img best-item__header-img--tasty"
+                      ></div>
                     </div>
-                    <div class="adv__item-label">3-5 дней доставка по РФ</div>
+                    <div class="best-item__content">
+                      <h2 class="best-item__content-label">Вкусно</h2>
+                      <div class="best-item__content-caption">
+                        Нежный, ненавязчивый, изысканный – так клиенты описывают
+                        вкусовые качества наших батончиков.
+                      </div>
+                    </div>
                   </div>
-
                 </li>
                 <li>
-                  <div class="adv__item">
-                    <div class="adv__item-img adv__item-img--fit">
-
+                  <div class="best-item">
+                    <div class="best-item__header">
+                      <div
+                        class="best-item__header-img best-item__header-img--nutrient"
+                      ></div>
                     </div>
-                    <div class="adv__item-label">Не портит фигуру</div>
+                    <div class="best-item__content">
+                      <h2 class="best-item__content-label">Питательно</h2>
+                      <div class="best-item__content-caption">
+                        Высокое содержание качественного белка, а также всех
+                        необходимых витаминов и минералов.
+                      </div>
+                    </div>
                   </div>
-
                 </li>
               </ul>
             </div>
           </div>
-
-        </div>
-      </section>
-      <section class="best">
-        <div class="best__header">
-          <div class="best__header-content">
-            <h2 class="best__header-label">Почему CHOCCO?</h2>
-            <div class="best__header-caption">В нашем мире все происходит очень быстро,
-              поэтому мы делаем батончики, которые удобно взять с собой.
+        </section>
+        <section class="section order">
+          <div class="container order__container">
+            <div class="order__content">
+              <div class="order-main">
+                <div class="order-main__img">
+                  <img
+                    src="/img/order/main.png"
+                    alt="Батончик морские водоросли"
+                  />
+                </div>
+                <div class="order-main__content">
+                  <button class="order-main__button">
+                    <div class="order-main__button-label">состав</div>
+                  </button>
+                  <h3>Баночик "Морские водоросли"</h3>
+                  <p>
+                    Гранола из морских водорослей с овсом, миндалем и тыквенными
+                    семечками. В состав также входят: сухое молоко, заменитель
+                    сахара и какао бобы.
+                  </p>
+                  <div class="order-main__prop">
+                    <div class="order-main__column">
+                      <div class="order-main__label">Калорийность</div>
+                      <div class="order-main__value">120 ккал</div>
+                    </div>
+                    <div class="order-main__column">
+                      <div class="order-main__label">Вес</div>
+                      <div class="order-main__value">98 грамм</div>
+                    </div>
+                  </div>
+                  <div class="order-main__footer">
+                    <div class="order-main__price">140</div>
+                    <div class="order-main__button-order">
+                      <button class="button">
+                        <div class="button__label">Заказать</div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
-        </div>
-        <div class="best__content">
-          <ul>
-            <li>
-              <div class="best-item">
-                <div class="best-item__header">
-                  <div class="best-item__header-img best-item__header-img--useful">
+        </section>
+        <section class="section team">
+          <div class="container team__container">
+            <div class="team__header">
+              <h3>Команда</h3>
+            </div>
+            <div class="team__content">
+              <ul>
+                <li>
+                  <div class="team__list-item">
+                    <div class="team-member">
+                      <div class="team-member__img">
+                        <img src="/img/team/boris.png" alt="Борис Федорович" />
+                      </div>
+                      <div class="team-member__content">
+                        <h5>Борис Федорович</h5>
+                        <div>
+                          Оператор
+                        </div>
+                        <p>
+                          С радостью поможет подобрать батончики и оформить
+                          заказ.
+                        </p>
+                      </div>
+                    </div>
                   </div>
+                </li>
+                <li>
+                  <div class="team__list-item">
+                    <div class="team-member">
+                      <div class="team-member__img">
+                        <img src="/img/team/alla.png" alt="Алла Иванова" />
+                      </div>
+                      <div class="team-member__content">
+                        <h5>Алла Иванова</h5>
+                        <div class="team-member__position">
+                          Оператор
+                        </div>
+                        <p>
+                          С радостью поможет подобрать батончики и оформить
+                          заказ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="team__list-item">
+                    <div class="team-member">
+                      <div class="team-member__img">
+                        <img src="/img/team/kirill.png" alt="Кирилл Матросов" />
+                      </div>
+                      <div class="team-member__content">
+                        <h5>Кирилл Матросов</h5>
+                        <div class="team-member__position">
+                          Оператор
+                        </div>
+                        <p>
+                          С радостью поможет подобрать батончики и оформить
+                          заказ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="team__list-item">
+                    <div class="team-member">
+                      <div class="team-member__img">
+                        <img src="/img/team/mila.png" alt="Мила Рыжкова" />
+                      </div>
+                      <div class="team-member__content">
+                        <h5>Мила Рыжкова</h5>
+                        <div class="team-member__position">
+                          Оператор
+                        </div>
+                        <p>
+                          С радостью поможет подобрать батончики и оформить
+                          заказ.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section review">
+          <div class="container review__container">
+            <div class="review__header">
+              <h3>Отзывы</h3>
+            </div>
+            <div class="review__content">
+              <div class="review-item">
+                <div class="review-item__img">
+                  <img src="/img/review/alena.png" alt="Алёна Хмельницкая" />
                 </div>
-                <div class="best-item__content">
-                  <h2 class="best-item__content-label">Полезно</h2>
-                  <div class="best-item__content-caption">
-                    Натуральность - ключевое качество
-                    нашей продукции. Мы используем
-                    только природные ингредиенты.
-                  </div>
+                <div class="review-item__content">
+                  <h4>Лучший перекус</h4>
+                  <p>
+                    Я ем малыми порциями, но часто. Это повышает мою
+                    продуктивность в разы. В течение дня сижу за компьютером и
+                    часто отходить в кафе или на кухню просто не могу себе
+                    позволить. А батончик – он всегда под рукой. Это приятно и
+                    удобно.
+                  </p>
+                  <div>Алёна Хмельницкая</div>
                 </div>
               </div>
-            </li>
-            <li>
-              <div class="best-item">
-                <div class="best-item__header">
-                  <div class="best-item__header-img best-item__header-img--tasty">
-
-                  </div>
-                </div>
-                <div class="best-item__content">
-                  <h2 class="best-item__content-label">Вкусно</h2>
-                  <div class="best-item__content-caption">
-                    Нежный, ненавязчивый, изысканный –
-                    так клиенты описывают вкусовые
-                    качества наших батончиков.
-                  </div>
-                </div>
+            </div>
+            <div class="review__footer">
+              <div class="review__nav">
+                <ul>
+                  <li>
+                    <div class="review__nav-item"></div>
+                  </li>
+                  <li>
+                    <div class="review__nav-item"></div>
+                  </li>
+                  <li>
+                    <div class="review__nav-item"></div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li>
-              <div class="best-item">
-                <div class="best-item__header">
-                  <div class="best-item__header-img best-item__header-img--nutrient">
-
-                  </div>
-                </div>
-                <div class="best-item__content">
-                  <h2 class="best-item__content-label">Питательно</h2>
-                  <div class="best-item__content-caption">
-                    Высокое содержание качественного
-                    белка, а также всех необходимых
-                    витаминов и минералов.
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="best__rasp"></div>
-        <div class="best__leaf"></div>
-      </section>
-    </main>
-  </div>
-
-</body>
-
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

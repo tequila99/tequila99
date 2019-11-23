@@ -1,0 +1,90 @@
+.order-main {
+  display: flex;
+  &__img {
+    display: flex;
+    width: 474px;
+    height: 422px;
+    background: url('/img/order/leafs.png') bottom left no-repeat;
+    img {
+      margin: auto;
+      display: block;
+    }
+  }
+  &__button {
+    // display: flex;
+    // flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #00accf;
+    border: none;
+    &-label {
+      margin: 0 auto;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      &:before {
+        content: '';
+        width: 51px;
+        height: 51px;
+        margin: auto;
+        background: url('/img/order/chocolate-bar.png') center center;
+        margin-bottom: 7px;
+      }
+    }
+  }
+  &__content {
+    max-width: 360px;
+    margin-left: 66px;
+    h3 {
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 37px;
+    }
+    p {
+      margin-top: 22px;
+      color: #666;
+      font-size: 18px;
+    }
+  }
+  &__prop {
+    margin-top: 37px;
+    display: flex;
+  }
+  &__column {
+    width: 50%;
+    color: #333333;
+    font-size: 18px;
+  }
+  &__label {
+    font-weight: 400;
+  }
+  &__value {
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  &__footer {
+    display: flex;    
+    align-items: center;
+    margin-top: 55px;
+  }
+  &__price {
+    width: 50%;
+    font-size: 60px;
+    font-weight: 300;
+    &:after {
+      content: '₽';
+      font-size: 50px;
+      margin-left: 15px;
+    }
+  }
+  &__button-order {
+    display: flex;
+    button {
+      flex: 1;
+    }
+  }
+}

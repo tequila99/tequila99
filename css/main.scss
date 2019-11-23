@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   color: #fff;
+  background: #fff;
   // line-height: 1.42;
   
 }
@@ -17,20 +18,18 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #61c4d9;
+  // background-color: #61c4d9;
 }
 .container {
-  width: 970px;
+  width: 1100px;
   margin-left: 0px;
-  margin-right: 0px;;
-  &__section {
-    position: relative;
-    height: 100%;
-  }
+  margin-right: 0px;
 }
 .section {
   height: 100vh;
   min-height: 650px;
+  display: flex;
+  flex-direction: column;
 }
 
 ul,h1,h2,h3,h4,h5,p {
@@ -41,12 +40,18 @@ ul,h1,h2,h3,h4,h5,p {
 ul li {
   list-style: none;
 }
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @import './sections/intro.scss';
 @import './sections/best.scss';
+@import './sections/order.scss';
+@import './sections/team.scss';
+@import './sections/review.scss';
 @import './blocks/logo.scss';
 @import './blocks/nav.scss';
 @import './blocks/intro-main.scss';
@@ -55,3 +60,6 @@ ul li {
 @import './blocks/adv.scss';
 @import './blocks/best-item.scss';
 @import './blocks/header.scss';
+@import './blocks/order-main.scss';
+@import './blocks/team-member.scss';
+@import './blocks/review-item.scss';

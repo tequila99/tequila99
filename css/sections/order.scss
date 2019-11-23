@@ -1,0 +1,24 @@
+$bg-order:#f8faf9;
+$color-order: #0d0d0d;
+.order {
+  background-color: $bg-order;
+  color: $color-order;
+  position: relative;
+  display: flex;
+  &__container {
+    margin: auto;
+    position: relative;
+    display: flex;
+
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom:-73px;
+    right: 15px;
+    width: 135px;
+    height: 112px; 
+    z-index: 1;
+    background: url('/img/order/background.png') no-repeat;    
+  }
+}
