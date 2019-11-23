@@ -1,8 +1,31 @@
 .best {
   background-color: #fff;
   color: #0d0d0d;
-  height: 650px;
-  position: relative; }
+  position: relative;
+  display: flex; }
+  .best:after {
+    content: '';
+    position: absolute;
+    bottom: -109px;
+    left: 0;
+    width: 191px;
+    height: 571px;
+    background: url("/img/best/background.png") no-repeat;
+    z-index: 1; }
+  .best:before {
+    content: '';
+    position: absolute;
+    top: -61px;
+    left: 30px;
+    width: 59px;
+    height: 112px;
+    z-index: 1;
+    background: url("/img/intro/leaf-3.png"); }
+  .best__container {
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column; }
   .best__header {
     margin-top: 115px;
     display: flex;
@@ -46,19 +69,5 @@
           right: -75px;
           width: 67px;
           height: 21px; }
-  .best__rasp {
-    position: absolute;
-    top: 444px;
-    left: 0;
-    width: 161px;
-    height: 315px;
-    background: url("/img/best/rasb.png") no-repeat; }
-  .best__leaf {
-    position: absolute;
-    top: 188px;
-    left: 0;
-    width: 191px;
-    height: 314px;
-    background: url("/img/best/leaf.png") no-repeat; }
 
 /*# sourceMappingURL=best.css.map */

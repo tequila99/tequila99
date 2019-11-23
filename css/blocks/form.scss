@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  &__elem {
+    display: flex;
+    margin: auto;
+    // max-width: 944px;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+  &__block {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &-title {
+      font-size: 18px;
+      color: #0f5a47;
+      margin-bottom: 6px;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__input {
+    width:100%;
+    background: #fff;
+    border-radius: 3px;
+    padding: 22px 11px;
+    outline: none;
+    border: 1px solid transparent;  
+    &:focus {
+      border-color: #b24930;
+    }  
+    &::placeholder {
+      color: rgba(34, 31, 31, 0.5);
+    }
+    &--textarea {
+      height: 180px;
+      resize: none;
+      padding-top: 8px;
+    }
+  }
+  &__question-options {
+    display: flex;
+  }
+}
+
+.option {
+  display: flex;
+  margin-left: 20px;
+  &:first-child {
+    margin-left: 0px;
+  }
+}
