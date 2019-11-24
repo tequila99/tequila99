@@ -1,0 +1,15 @@
+.avatar {
+  max-width: 70px;
+  max-height: 70px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid transparent;
+  display: flex;
+  img {
+    display: block;
+    margin: auto;
+    flex: 1;
+
+  }
+}

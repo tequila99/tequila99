@@ -8,7 +8,7 @@ $bg: #61c4d9;
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 162px;
+    padding-top: 94px;
     }    
 
   &:before {
@@ -23,7 +23,7 @@ $bg: #61c4d9;
   &:after {
     content: '';
     position: absolute;
-    bottom:-48px;
+    bottom:-47px;
     right: 17px;
     width: 460px;
     height: 341px; 
@@ -36,7 +36,7 @@ $bg: #61c4d9;
     // margin-top: 162px;
   }
   &__footer {
-    margin-top: 72px;
+    margin-top: 62px;
     justify-self: flex-end;
     max-width: 500px;
   }
@@ -44,8 +44,8 @@ $bg: #61c4d9;
     position: absolute;
     display: block;
     &--main {
-      top: 10%;
-      right: 28px;
+      top: 0;
+      right: 33px;
     }
   }
 }

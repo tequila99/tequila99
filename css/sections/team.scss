@@ -31,7 +31,7 @@ $color-order: #0d0d0d;
     flex-direction: column;
   }
   &__header {
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     h3 {
       font-size: 48px;
       font-weight: 700;
@@ -39,7 +39,7 @@ $color-order: #0d0d0d;
     }
   }
   &__content {
-    margin-top: 58px;
+    margin-top: 50px;
     display: flex;
     ul {
       display: flex;

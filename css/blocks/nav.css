@@ -1,7 +1,7 @@
 .nav ul {
   display: flex; }
   .nav ul li {
-    padding-right: 24px; }
+    padding-right: 26px; }
     .nav ul li :last-child {
       padding-right: none; }
     .nav ul li a {

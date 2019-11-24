@@ -10,5 +10,10 @@
     height: 11px;
     margin-right: 5px;
     background: url("/img/intro/phone.png") center center/contain no-repeat; }
+  .contact-phone--small {
+    font-size: 21px;
+    color: #0f5a47; }
+    .contact-phone--small:before {
+      background: url("/img/intro/phone-dark.png") center center no-repeat; }
 
 /*# sourceMappingURL=contact-phone.css.map */

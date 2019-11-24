@@ -11,4 +11,11 @@
     margin-right: 5px;
     background: url('/img/intro/phone.png') center center / contain no-repeat;
   }
+  &--small {
+    font-size: 21px;
+    color: #0f5a47;
+    &:before {
+      background: url('/img/intro/phone-dark.png') center center no-repeat;     
+    }
+  }
 }

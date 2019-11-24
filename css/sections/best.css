@@ -22,12 +22,13 @@
     z-index: 1;
     background: url("/img/intro/leaf-3.png"); }
   .best__container {
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 102px;
     position: relative;
     display: flex;
     flex-direction: column; }
   .best__header {
-    margin-top: 115px;
+    margin-top: 4px;
     display: flex;
     justify-content: center; }
     .best__header-content {
@@ -40,20 +41,19 @@
     font-weight: 700;
     text-transform: uppercase; }
   .best__header-caption {
-    margin-top: 23px;
     color: #666;
     font-size: 18px;
-    margin-top: 23px;
+    margin-top: 7px;
     text-align: center; }
   .best__content {
-    margin-top: 57px;
+    margin-top: 58px;
     display: flex;
     justify-content: center; }
     .best__content ul {
       display: flex; }
       .best__content ul li {
         max-width: 278px;
-        margin-right: 81px;
+        margin-right: 73px;
         display: flex;
         align-items: center;
         position: relative; }
@@ -67,6 +67,7 @@
           background: url("/img/best/1.png");
           position: absolute;
           right: -75px;
+          top: 52px;
           width: 67px;
           height: 21px; }
 

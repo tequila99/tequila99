@@ -7,7 +7,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 162px; }
+    padding-top: 94px; }
   .intro:before {
     content: '';
     position: absolute;
@@ -19,7 +19,7 @@
   .intro:after {
     content: '';
     position: absolute;
-    bottom: -48px;
+    bottom: -47px;
     right: 17px;
     width: 460px;
     height: 341px;
@@ -28,14 +28,14 @@
   .intro__content {
     width: 404px; }
   .intro__footer {
-    margin-top: 72px;
+    margin-top: 62px;
     justify-self: flex-end;
     max-width: 500px; }
   .intro__img {
     position: absolute;
     display: block; }
     .intro__img--main {
-      top: 10%;
-      right: 28px; }
+      top: 0;
+      right: 33px; }
 
 /*# sourceMappingURL=intro.css.map */

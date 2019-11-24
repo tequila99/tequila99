@@ -19,7 +19,9 @@ body {
 .container {
   width: 1100px;
   margin-left: 0px;
-  margin-right: 0px; }
+  margin-right: 0px;
+  padding-left: 80px;
+  padding-right: 80px; }
 
 .section {
   height: 100vh;
@@ -48,7 +50,7 @@ ul li {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 162px; }
+    padding-top: 94px; }
   .intro:before {
     content: '';
     position: absolute;
@@ -60,7 +62,7 @@ ul li {
   .intro:after {
     content: '';
     position: absolute;
-    bottom: -48px;
+    bottom: -47px;
     right: 17px;
     width: 460px;
     height: 341px;
@@ -69,15 +71,15 @@ ul li {
   .intro__content {
     width: 404px; }
   .intro__footer {
-    margin-top: 72px;
+    margin-top: 62px;
     justify-self: flex-end;
     max-width: 500px; }
   .intro__img {
     position: absolute;
     display: block; }
     .intro__img--main {
-      top: 10%;
-      right: 28px; }
+      top: 0;
+      right: 33px; }
 
 .best {
   background-color: #fff;
@@ -103,12 +105,13 @@ ul li {
     z-index: 1;
     background: url("/img/intro/leaf-3.png"); }
   .best__container {
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 102px;
     position: relative;
     display: flex;
     flex-direction: column; }
   .best__header {
-    margin-top: 115px;
+    margin-top: 4px;
     display: flex;
     justify-content: center; }
     .best__header-content {
@@ -121,20 +124,19 @@ ul li {
     font-weight: 700;
     text-transform: uppercase; }
   .best__header-caption {
-    margin-top: 23px;
     color: #666;
     font-size: 18px;
-    margin-top: 23px;
+    margin-top: 7px;
     text-align: center; }
   .best__content {
-    margin-top: 57px;
+    margin-top: 58px;
     display: flex;
     justify-content: center; }
     .best__content ul {
       display: flex; }
       .best__content ul li {
         max-width: 278px;
-        margin-right: 81px;
+        margin-right: 73px;
         display: flex;
         align-items: center;
         position: relative; }
@@ -148,6 +150,7 @@ ul li {
           background: url("/img/best/1.png");
           position: absolute;
           right: -75px;
+          top: 52px;
           width: 67px;
           height: 21px; }
 
@@ -198,13 +201,13 @@ ul li {
     display: flex;
     flex-direction: column; }
   .team__header {
-    margin: 0 auto; }
+    margin: 10px auto 0 auto; }
     .team__header h3 {
       font-size: 48px;
       font-weight: 700;
       text-transform: uppercase; }
   .team__content {
-    margin-top: 58px;
+    margin-top: 50px;
     display: flex; }
     .team__content ul {
       display: flex;
@@ -250,6 +253,11 @@ ul li {
       text-transform: uppercase; }
   .review__content {
     margin-top: 44px; }
+  .review__nav {
+    display: flex;
+    margin-top: 21px;
+    justify-content: center;
+    align-items: center; }
 
 .work {
   background-color: #f8faf9;
@@ -352,7 +360,7 @@ ul li {
 .nav ul {
   display: flex; }
   .nav ul li {
-    padding-right: 24px; }
+    padding-right: 26px; }
     .nav ul li :last-child {
       padding-right: none; }
     .nav ul li a {
@@ -369,16 +377,19 @@ ul li {
     line-height: 60px;
     text-transform: uppercase; }
   .intro-main__caption {
+    margin-left: 5px;
     font-size: 21px;
     width: 90%;
-    margin-top: 22px; }
+    margin-top: 11px; }
   .intro-main .button {
+    margin-left: 5px;
     width: 40%;
-    margin-top: 32px; }
+    margin-top: 26px; }
 
 .button {
   background-color: #fff;
   border-radius: 40px;
+  border: 2px solid transparent;
   padding: 18px 15px; }
   .button__label {
     padding: 0px;
@@ -400,6 +411,11 @@ ul li {
     height: 11px;
     margin-right: 5px;
     background: url("/img/intro/phone.png") center center/contain no-repeat; }
+  .contact-phone--small {
+    font-size: 21px;
+    color: #0f5a47; }
+    .contact-phone--small:before {
+      background: url("/img/intro/phone-dark.png") center center no-repeat; }
 
 .adv ul {
   display: flex; }
@@ -424,7 +440,8 @@ ul li {
 .best-item {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  flex: 1; }
   .best-item__header-img {
     width: 125px;
     height: 125px;
@@ -452,7 +469,7 @@ ul li {
       margin: auto;
       background: url("/img/best/nutrient.png") no-repeat; }
   .best-item__content {
-    margin-top: 35px;
+    margin-top: 28px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -466,12 +483,12 @@ ul li {
       text-align: center;
       font-weight: 300;
       font-size: 18px;
-      margin-top: 30px; }
+      margin-top: 23px; }
 
 .header {
   width: 100%;
   position: absolute;
-  top: 35px;
+  top: 22px;
   left: 0px;
   background: transparent;
   display: flex;
@@ -483,7 +500,12 @@ ul li {
   .header__logo {
     margin-right: 45px; }
   .header__menu {
-    margin-right: 45px; }
+    margin-right: 22px;
+    display: flex;
+    align-items: center; }
+  .header__contacts {
+    display: flex;
+    align-items: center; }
 
 .order-main {
   display: flex; }
@@ -566,7 +588,7 @@ ul li {
     .team-member__img img {
       margin: auto; }
   .team-member__content {
-    margin-top: 26px;
+    margin-top: 22px;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -578,7 +600,7 @@ ul li {
       color: #281e1e;
       font-size: 18px;
       font-weight: 400;
-      margin-top: 13px; }
+      margin-top: 8px; }
     .team-member__content p {
       text-align: center;
       color: #666;
@@ -682,16 +704,76 @@ ul li {
 
 .footer {
   width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
   background: #fff;
-  height: 93px;
+  min-height: 93px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 1; }
   .footer__container {
     margin: 0 auto;
     display: flex; }
+  .footer__contacts {
+    color: #010101;
+    display: flex;
+    flex-direction: column;
+    min-height: 52px;
+    justify-content: space-between; }
+  .footer__socials {
+    display: flex;
+    justify-content: flex-end; }
+
+.address {
+  font-size: 21px; }
+
+.fixed-menu {
+  position: fixed;
+  top: 216px;
+  right: 51px;
+  z-index: 2; }
+
+.fixed-menu__dot {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-bottom: 3px;
+  position: relative; }
+  .fixed-menu__dot--active {
+    border-color: #fff; }
+  .fixed-menu__dot:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.user-nav ul {
+  display: flex; }
+  .user-nav ul li {
+    cursor: pointer;
+    margin-right: 4px; }
+    .user-nav ul li:last-child {
+      margin-right: 0; }
+.user-nav__item--active .avatar {
+  border: 6px solid #0f5a47; }
+
+.avatar {
+  max-width: 70px;
+  max-height: 70px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid transparent;
+  display: flex; }
+  .avatar img {
+    display: block;
+    margin: auto;
+    flex: 1; }
 
 /*# sourceMappingURL=main.css.map */

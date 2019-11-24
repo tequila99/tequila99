@@ -26,13 +26,14 @@ $color: #0d0d0d;
     background: url('/img/intro/leaf-3.png');      
   }
   &__container {
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 102px;
     position: relative;
     display: flex;
     flex-direction: column;
   }
   &__header {
-    margin-top: 115px;
+    margin-top: 4px;
     display: flex;
     justify-content: center;
     &-content {
@@ -48,14 +49,13 @@ $color: #0d0d0d;
     text-transform: uppercase;
   }
   &__header-caption {
-    margin-top: 23px;
     color: #666;
     font-size: 18px;
-    margin-top: 23px;
+    margin-top: 7px;
     text-align: center;
   }
   &__content {
-    margin-top: 57px;
+    margin-top: 58px;
     display: flex;
     justify-content: center;
     
@@ -63,7 +63,7 @@ $color: #0d0d0d;
       display: flex;
       li {
         max-width: 278px;
-        margin-right: 81px;
+        margin-right: 73px;
         display: flex;
         align-items: center;
         position: relative;
@@ -79,6 +79,7 @@ $color: #0d0d0d;
           background: url('/img/best/1.png');
           position: absolute;
           right: -75px;
+          top: 52px;
           width: 67px;
           height: 21px;
         }

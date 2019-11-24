@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   position: absolute;
-  top: 35px;
+  top: 22px;
   left: 0px;
   // background: #61c4d9;
   background: transparent;
@@ -16,6 +16,12 @@
     margin-right: 45px;
   }
   &__menu {
-    margin-right: 45px;
+    margin-right: 22px;
+    display: flex;
+    align-items: center;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
   }
 }
