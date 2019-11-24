@@ -25,13 +25,15 @@ $color-order: #0d0d0d;
     background: url('/img/team/rasb.png');
   }
   &__container {
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 64px;
     position: relative;
     display: flex;
     flex-direction: column;
   }
   &__header {
-    margin: 10px auto 0 auto;
+    margin: 0 auto;
+    
     h3 {
       font-size: 48px;
       font-weight: 700;

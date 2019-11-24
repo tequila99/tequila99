@@ -25,7 +25,8 @@ $color-order: #0d0d0d;
     background: url('/img/review/berry.png');
   }
   &__container {
-    margin: auto auto;
+    padding-top: 60px;
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -39,12 +40,15 @@ $color-order: #0d0d0d;
     }
   }
   &__content {
-    margin-top: 44px;
+    margin-top: 29px;
   }
   &__nav {
     display: flex;
     margin-top: 21px;
     justify-content: center;
     align-items: center;
+    &-space {
+      margin-left: 16px;
+    }
   }
 }

@@ -11,15 +11,13 @@ body {
   background: #fff; }
 
 .wrapper {
-  /* overflow: hidden; */
   position: relative;
   display: flex;
+  width: 100%;
   flex-direction: column; }
 
 .container {
   width: 1100px;
-  margin-left: 0px;
-  margin-right: 0px;
   padding-left: 80px;
   padding-right: 80px; }
 
@@ -196,12 +194,13 @@ ul li {
     z-index: 1;
     background: url("/img/team/rasb.png"); }
   .team__container {
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 64px;
     position: relative;
     display: flex;
     flex-direction: column; }
   .team__header {
-    margin: 10px auto 0 auto; }
+    margin: 0 auto; }
     .team__header h3 {
       font-size: 48px;
       font-weight: 700;
@@ -241,7 +240,8 @@ ul li {
     height: 86px;
     background: url("/img/review/berry.png"); }
   .review__container {
-    margin: auto auto;
+    padding-top: 60px;
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column; }
@@ -252,12 +252,14 @@ ul li {
       font-weight: 700;
       text-transform: uppercase; }
   .review__content {
-    margin-top: 44px; }
+    margin-top: 29px; }
   .review__nav {
     display: flex;
     margin-top: 21px;
     justify-content: center;
     align-items: center; }
+    .review__nav-space {
+      margin-left: 16px; }
 
 .work {
   background-color: #f8faf9;
@@ -346,6 +348,13 @@ ul li {
       text-transform: uppercase; }
   .order-form__content {
     margin-top: 55px; }
+
+.menu {
+  background: yellow; }
+  .menu__container {
+    margin: 0 auto;
+    position: relative;
+    display: flex; }
 
 .map {
   background: url("/img/map/background.png") center center/cover;
@@ -440,8 +449,7 @@ ul li {
 .best-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex: 1; }
+  align-items: center; }
   .best-item__header-img {
     width: 125px;
     height: 125px;
@@ -631,7 +639,8 @@ ul li {
     .review-item__img img {
       margin: auto; }
   .review-item__content {
-    margin-left: 15px;
+    margin-left: 18px;
+    padding-top: 14px;
     display: flex;
     flex-direction: column; }
     .review-item__content h4 {
@@ -639,10 +648,12 @@ ul li {
       font-size: 30px;
       font-weight: 700; }
     .review-item__content p {
-      margin-top: 30px;
-      color: #666666; }
+      margin-top: 23px;
+      font-size: 18px;
+      color: #666666;
+      line-height: 22px; }
     .review-item__content div {
-      margin-top: 32px;
+      margin-top: 26px;
       color: #666666;
       font-weight: 700; }
 
@@ -757,15 +768,15 @@ ul li {
   display: flex; }
   .user-nav ul li {
     cursor: pointer;
-    margin-right: 4px; }
+    margin-right: -4px; }
     .user-nav ul li:last-child {
       margin-right: 0; }
 .user-nav__item--active .avatar {
   border: 6px solid #0f5a47; }
 
 .avatar {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 82px;
+  max-height: 82px;
   position: relative;
   border-radius: 50%;
   overflow: hidden;

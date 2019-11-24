@@ -1,0 +1,8 @@
+.menu {
+  background: yellow;
+  &__container {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+  }
+}

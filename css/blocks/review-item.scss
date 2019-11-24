@@ -24,7 +24,8 @@
     }
   }
   &__content {
-    margin-left: 15px;
+    margin-left: 18px;
+    padding-top: 14px;
     display: flex;
     flex-direction: column;
     h4 {
@@ -33,11 +34,13 @@
       font-weight: 700;
     }
     p {
-      margin-top: 30px;
+      margin-top: 23px;
+      font-size: 18px;
       color: #666666;
+      line-height: 22px;;
     }
     div {
-      margin-top: 32px;
+      margin-top: 26px;
       color: #666666;
       font-weight: 700;
     }
