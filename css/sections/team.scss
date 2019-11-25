@@ -30,6 +30,8 @@ $color-order: #0d0d0d;
     position: relative;
     display: flex;
     flex-direction: column;
+    // justify-content: center;
+    height: 100%;
   }
   &__header {
     margin: 0 auto;
@@ -43,6 +45,8 @@ $color-order: #0d0d0d;
   &__content {
     margin-top: 50px;
     display: flex;
+    align-items: center;
+    flex: 1;
     ul {
       display: flex;
       margin-left: auto;

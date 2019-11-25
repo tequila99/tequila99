@@ -1,13 +1,14 @@
 .header {
   width: 100%;
-  position: absolute;
-  top: 22px;
-  left: 0px;
+  // position: absolute;
+  // top: 22px;
+  // left: 0px;
   // background: #61c4d9;
-  background: transparent;
+  // background: transparent;
   display: flex;
   align-items: center;
-  z-index: 1;
+  margin-top: 25px;
+  z-index: 1;  
   &__container {
     margin: 0 auto;
     display: flex;

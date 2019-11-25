@@ -30,6 +30,7 @@ $color-order: #0d0d0d;
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
   &__header {
     margin: 0 auto;
@@ -40,7 +41,12 @@ $color-order: #0d0d0d;
     }
   }
   &__content {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
     margin-top: 29px;
+    justify-content: center;
+    flex: 1;
   }
   &__nav {
     display: flex;
