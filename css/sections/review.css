@@ -2,39 +2,49 @@
   background-color: #fff;
   color: #0d0d0d;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
   .review:after {
     content: '';
     position: absolute;
-    bottom: -159px;
-    left: 0px;
-    width: 139px;
-    height: 321px;
+    bottom: remy(-159);
+    left: 0;
+    width: remy(139);
+    height: remy(321);
+    z-index: 1;
     background: url("/img/review/background.png") no-repeat; }
   .review:before {
     content: '';
     position: absolute;
-    top: 36px;
-    right: 14px;
-    width: 150px;
-    height: 86px;
+    top: remy(36);
+    right: remy(14);
+    width: remy(150);
+    height: remy(86);
     background: url("/img/review/berry.png"); }
   .review__container {
-    margin: auto auto;
+    padding-top: remy(60);
+    margin: 0 auto;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    border: 1px solid grey; }
+    height: 100%; }
   .review__header {
     margin: 0 auto; }
     .review__header h3 {
-      font-size: 48px;
+      font-size: remy(48);
       font-weight: 700;
       text-transform: uppercase; }
+  .review__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: remy(29);
+    justify-content: center;
+    flex: 1; }
+  .review__nav {
+    display: flex;
+    margin-top: remy(21);
+    justify-content: center;
+    align-items: center; }
+    .review__nav-space {
+      margin-left: remy(16); }
+
+/*# sourceMappingURL=review.css.map */

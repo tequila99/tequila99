@@ -1,2 +1,106 @@
-.order-main__img {
-  background: url("/img/order/leafs.png") center center/contain no-repeat; }
+@charset "UTF-8";
+.order-main {
+  display: flex;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .order-main {
+      flex-direction: column;
+      align-items: center; } }
+  .order-main__img {
+    display: flex;
+    width: 55%;
+    background: url("/img/order/leafs.png") bottom left no-repeat; }
+    .order-main__img img {
+      width: 80%;
+      margin: auto;
+      display: block; }
+  .order-main__button {
+    padding: remy(10) remy(20);
+    border-radius: remy(5);
+    background: #00accf;
+    border: none; }
+    @media screen and (max-width: 768px) {
+      .order-main__button {
+        position: absolute;
+        top: -2rem;
+        right: 0; } }
+    .order-main__button-label {
+      margin: 0 auto;
+      color: #fff;
+      font-size: remy(14);
+      font-weight: 700;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column; }
+      .order-main__button-label:before {
+        content: '';
+        width: remy(51);
+        height: remy(51);
+        margin: auto;
+        background: url("/img/order/chocolate-bar.png") center center;
+        margin-bottom: remy(7); }
+  .order-main__content {
+    max-width: remy(360);
+    margin-left: remy(66); }
+    .order-main__content h3 {
+      text-transform: uppercase;
+      font-size: remy(36);
+      font-weight: 700;
+      margin-top: remy(37); }
+    .order-main__content p {
+      margin-top: remy(22);
+      color: #666;
+      font-size: remy(18); }
+    @media screen and (max-width: 768px) {
+      .order-main__content {
+        margin-left: 0;
+        max-width: 70%;
+        dispaly: flex;
+        flex-direction: column;
+        align-items: center; }
+        .order-main__content h3 {
+          text-align: center; }
+        .order-main__content p {
+          text-align: center; } }
+  .order-main__prop {
+    margin-top: remy(37);
+    display: flex; }
+  .order-main__column {
+    width: 50%;
+    color: #333333;
+    font-size: remy(18); }
+  .order-main__label {
+    font-weight: 400; }
+    @media screen and (max-width: 768px) {
+      .order-main__label {
+        text-align: center; } }
+  .order-main__value {
+    font-weight: 700;
+    margin-top: remy(5); }
+    @media screen and (max-width: 768px) {
+      .order-main__value {
+        text-align: center; } }
+  .order-main__footer {
+    display: flex;
+    align-items: center;
+    margin-top: remy(55); }
+  .order-main__price {
+    width: 50%;
+    font-size: remy(60);
+    font-weight: 300; }
+    .order-main__price:after {
+      content: '₽';
+      font-size: remy(50);
+      margin-left: remy(15); }
+    @media screen and (max-width: 768px) {
+      .order-main__price {
+        text-align: center; } }
+  .order-main__button-order {
+    display: flex; }
+    .order-main__button-order button {
+      flex: 1; }
+    @media screen and (max-width: 768px) {
+      .order-main__button-order {
+        margin: 0 auto; } }
+
+/*# sourceMappingURL=order-main.css.map */

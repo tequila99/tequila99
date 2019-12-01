@@ -1,62 +1,69 @@
-$bg: #fff;
-$color: #0d0d0d;
+@import '../assets/_variables.scss';
+@import '../assets/_mixins.scss';
 .best {
-  background-color: $bg;
+  background-color: $white;
   color: $color;
   position: relative;
   display: flex;
   &:after {
     content: '';
     position: absolute;
-    bottom: -109px;
+    bottom: remy(-109);
     left: 0;
-    width: 191px;
-    height: 571px;
+    width: remy(191);
+    height: remy(571);
     background: url('/img/best/background.png') no-repeat;  
-    z-index: 1;  
+    z-index: 10;  
+    @include phones {
+      display: none;
+    }
   }
   &:before {
     content: '';
     position: absolute;
-    top:-61px;
-    left: 30px;
-    width: 59px;
-    height: 112px; 
-    z-index: 1;
-    background: url('/img/intro/leaf-3.png');      
+    top:remy(-61);
+    left: remy(30);
+    width: remy(59);
+    height: remy(112); 
+    z-index: 10;
+    background: url('/img/intro/leaf-3.png');     
+    @include phones {
+      display: none;
+    }
+ 
   }
   &__container {
     margin: 0 auto;
-    // padding-top: 102px;
+    // padding-top: remy(102);
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
   }
   &__header {
-    margin-top: 102px;
+    margin-top: remy(102);
     display: flex;
     justify-content: center;
     &-content {
       display: flex;
       flex-direction: column;
-      max-width: 450px;
+      max-width: remy(450);
     }
   }
   &__header-label {
     margin: auto;
-    font-size: 48px;
+    font-size: remy(48);
     font-weight: 700;
     text-transform: uppercase;
   }
   &__header-caption {
-    color: #666;
-    font-size: 18px;
-    margin-top: 7px;
+    color: $color-grey;
+    font-size: remy(18);
+    margin-top: remy(7);
     text-align: center;
   }
   &__content {
-    // margin-top: 58px;
+    // margin-top: remy(58);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,15 +71,16 @@ $color: #0d0d0d;
     
     ul {
       display: flex;
-      // transform: translateY(-20px);
+      flex-wrap: wrap;
+      // transform: translateY(-remy(20));
       li {
-        max-width: 278px;
-        margin-right: 73px;
+        max-width: 17rem;
+        margin-right: 2.5rem;
         display: flex;
         align-items: center;
         position: relative;
         &:last-child {
-          margin-right: 0px;
+          margin-right: 0;
           &:after {
             content: '';
             background: none;
@@ -82,12 +90,35 @@ $color: #0d0d0d;
           content: '';
           background: url('/img/best/1.png');
           position: absolute;
-          right: -75px;
-          top: 52px;
-          width: 67px;
-          height: 21px;
+          right: remy(-75);
+          top: remy(52);
+          width: remy(67);
+          height: remy(21);
         }
-
+        @include tablets {
+          max-width: 25rem;
+          margin-right: 0;
+          margin-top: 3rem;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    @include tablets {
+      ul { 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        li {
+          margin-right: 0;
+          max-width: 100%;
+          height: 30%;
+          &:after {
+            content: '';
+            background: none;
+          }
+        }
       }
     }
   }

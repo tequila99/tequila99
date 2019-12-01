@@ -1,0 +1,14 @@
+.avatar {
+  max-width: 82px;
+  max-height: 82px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid transparent;
+  display: flex; }
+  .avatar img {
+    display: block;
+    margin: auto;
+    flex: 1; }
+
+/*# sourceMappingURL=avatar.css.map */

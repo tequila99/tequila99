@@ -1,20 +1,30 @@
+@import '../assets/_mixins.scss';
 .form {
   display: flex;
   width: 100%;
   height: 100%;
-  font-size: 18px;
+  font-size: remy(18);
+  
+
   &__elem {
     display: flex;
     margin: auto;
     // max-width: 944px;
+    @include tablets {
+      flex-direction: column;
+    }
   }
   &__col {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin-left: 20px;
+    margin-left: remy(20);
     &:first-child {
       margin-left: 0px;
+    }
+    @include tablets {
+      width:100%;
+      margin-left: 0;
     }
   }
   &__block {
@@ -53,20 +63,122 @@
       color: rgba(34, 31, 31, 0.5);
     }
     &--textarea {
-      height: 180px;
+      height: 208px;
       resize: none;
       padding-top: 8px;
     }
   }
+  &__question {
+    @include tablets {
+      margin: 0 auto;
+    }
+  }
   &__question-options {
     display: flex;
+  
+  }
+  &__buttons {
+    @include tablets {
+      margin: 0 auto;
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  @include tablets {
+    margin: 0 auto;
+  }
+  &__check {
+    position: absolute;
+    top: 0;
+    left: remy(-9999);
+  }
+  &__check-title {
+    display: inline-block;
+    font-size: remy(18);
+    margin-left: remy(10);
+  }
+  &__check-fake {
+    width: 1rem;
+    height: 1rem;
+    // border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}
+.checkbox__check:checked {
+  & + .checkbox__check-fake {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url("../../img/form/check.png") 50% no-repeat;
+      background-size: contain;
+      width: remy(11);
+      height: remy(9);      
+    }
   }
 }
 
 .option {
   display: flex;
-  margin-left: 20px;
+  margin-left: remy(20);
+  position: relative;
+  white-space: nowrap;
+  // @include inlineblock(middle);
+  cursor: pointer;
+  &__radio {
+    position: absolute;
+    top: 0;
+    left: remy(-9999);
+  }
+
+  &__radio-title {
+    display: inline-block;
+    font-size: remy(18);
+    margin-left: remy(10);
+
+  }
+  &__radio-fake {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: #0f5a47;
+      transition: width .3s, height .3s;
+    }
+
+    
+
+  }
   &:first-child {
-    margin-left: 0px;
+    margin-left: 0;
+
   }
 }
+
+
+.option__radio:checked + .option__radio-fake:after  {
+      width: remy(8);
+      height: remy(8);
+      z-index: 10;
+      content: '';
+    }

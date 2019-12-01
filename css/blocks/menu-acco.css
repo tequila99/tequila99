@@ -1,0 +1,102 @@
+.menu-acco:before, .menu-acco:after {
+  content: "";
+  display: table; }
+.menu-acco:after {
+  clear: both; }
+
+.menu-acco {
+  width: 70%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex; }
+  .menu-acco__item {
+    height: 100%;
+    display: flex; }
+    .menu-acco__item--active .menu-acco__content {
+      width: 100%; }
+    .menu-acco__item--active .menu-acco__text {
+      display: block; }
+    .menu-acco__item--active .menu-acco__trigger:last-child {
+      display: block;
+      position: relative; }
+      .menu-acco__item--active .menu-acco__trigger:last-child:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2f3234;
+        opacity: 0.93; }
+
+.menu-acco__trigger {
+  width: remy(100);
+  display: block;
+  height: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative; }
+  .menu-acco__trigger:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.4; }
+  .menu-acco__trigger--milk {
+    background-image: url("../../img/menu/milk.png"); }
+  .menu-acco__trigger--fruit {
+    background-image: url("../../img/menu/fruit.png"); }
+  .menu-acco__trigger--wildberry {
+    background-image: url("../../img/menu/wildberry.png"); }
+  .menu-acco__trigger:last-child {
+    display: none; }
+  @media screen and (max-width: 544px) {
+    .menu-acco__trigger {
+      width: remy(50); } }
+
+.menu-acco__trigger-text {
+  font-size: remy(40);
+  color: #fff;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 90%;
+  z-index: 10;
+  margin-top: remy(-20); }
+  @media screen and (max-width: 544px) {
+    .menu-acco__trigger-text {
+      font-size: remy(26); } }
+
+.menu-acco__content {
+  height: 100%;
+  background: #2f3234;
+  opacity: 0.93;
+  width: 0;
+  overflow: hidden; }
+
+.menu-acco__text {
+  font-size: remy(14);
+  display: block;
+  color: #fff;
+  padding: remy(60) remy(30);
+  width: 100%;
+  line-height: 1.8;
+  display: none; }
+  @media screen and (max-width: 544px) {
+    .menu-acco__text {
+      padding: remy(25) remy(15); } }
+
+/*# sourceMappingURL=menu-acco.css.map */

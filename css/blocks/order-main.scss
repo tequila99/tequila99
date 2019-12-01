@@ -1,11 +1,17 @@
+@import '../assets/_mixins.scss';
 .order-main {
   display: flex;
+  position: relative;
+  @include tablets {
+    flex-direction:column;
+    align-items: center;
+  }
   &__img {
     display: flex;
-    width: 474px;
-    height: 422px;
-    background: url('/img/order/leafs.png') bottom left no-repeat;
+    width: 55%;
+    background: url('/img/order/leafs.png') bottom left  no-repeat;
     img {
+      width: 80%;
       margin: auto;
       display: block;
     }
@@ -13,78 +19,109 @@
   &__button {
     // display: flex;
     // flex-direction: column;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: remy(10) remy(20);
+    border-radius: remy(5);
     background: #00accf;
     border: none;
+    @include tablets {
+      position: absolute;
+      top: -2rem;
+      right: 0;
+    }
+    
     &-label {
       margin: 0 auto;
       color: #fff;
-      font-size: 14px;
+      font-size: remy(14);
       font-weight: 700;
       text-transform: uppercase;
       display: flex;
       flex-direction: column;
       &:before {
         content: '';
-        width: 51px;
-        height: 51px;
+        width: remy(51);
+        height: remy(51);
         margin: auto;
         background: url('/img/order/chocolate-bar.png') center center;
-        margin-bottom: 7px;
+        margin-bottom: remy(7);
       }
     }
   }
   &__content {
-    max-width: 360px;
-    margin-left: 66px;
+    max-width: remy(360);
+    margin-left: remy(66);
     h3 {
       text-transform: uppercase;
-      font-size: 36px;
+      font-size: remy(36);
       font-weight: 700;
-      margin-top: 37px;
+      margin-top: remy(37);
     }
     p {
-      margin-top: 22px;
+      margin-top: remy(22);
       color: #666;
-      font-size: 18px;
+      font-size: remy(18);
+    }
+    @include tablets {
+      margin-left: 0;
+      max-width: 70%;
+      dispaly: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
     }
   }
   &__prop {
-    margin-top: 37px;
+    margin-top: remy(37);
     display: flex;
   }
   &__column {
     width: 50%;
     color: #333333;
-    font-size: 18px;
+    font-size: remy(18);
   }
   &__label {
     font-weight: 400;
+    @include tablets {
+      text-align: center;
+    }
   }
   &__value {
     font-weight: 700;
-    margin-top: 5px;
+    margin-top: remy(5);
+    @include tablets {
+      text-align: center;
+    }
   }
   &__footer {
     display: flex;    
     align-items: center;
-    margin-top: 55px;
+    margin-top: remy(55);
   }
   &__price {
     width: 50%;
-    font-size: 60px;
+    font-size: remy(60);
     font-weight: 300;
     &:after {
       content: '₽';
-      font-size: 50px;
-      margin-left: 15px;
+      font-size: remy(50);
+      margin-left: remy(15);
+    }
+    @include tablets {
+      text-align: center;
     }
   }
   &__button-order {
     display: flex;
     button {
       flex: 1;
+    }
+    @include tablets {
+      margin: 0 auto;
     }
   }
 }

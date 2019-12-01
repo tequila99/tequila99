@@ -8,6 +8,9 @@
       }
     }
   }
+  &__item-label {
+    display: block;
+  }
   &__item {
     display: flex;
     &-img {

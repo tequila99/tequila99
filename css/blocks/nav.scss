@@ -1,14 +1,16 @@
+@import '../assets/_variables.scss';
 .nav {
   ul {
     display: flex;
+    flex-wrap: wrap;
     li {
-      padding-right: 26px;
+      padding-right: 1rem;
       :last-child {
         padding-right: none;
       }
       a {
-        font-size: 18px;
-        color: #fff;
+        font-size: remy(18);
+        color: $white;
         text-decoration: none;
       }
     }

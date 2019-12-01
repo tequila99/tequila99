@@ -6,59 +6,67 @@
   .best:after {
     content: '';
     position: absolute;
-    bottom: -109px;
+    bottom: remy(-109);
     left: 0;
-    width: 191px;
-    height: 571px;
+    width: remy(191);
+    height: remy(571);
     background: url("/img/best/background.png") no-repeat;
-    z-index: 1; }
+    z-index: 10; }
+    @media screen and (max-width: 544px) {
+      .best:after {
+        display: none; } }
   .best:before {
     content: '';
     position: absolute;
-    top: -61px;
-    left: 30px;
-    width: 59px;
-    height: 112px;
-    z-index: 1;
+    top: remy(-61);
+    left: remy(30);
+    width: remy(59);
+    height: remy(112);
+    z-index: 10;
     background: url("/img/intro/leaf-3.png"); }
+    @media screen and (max-width: 544px) {
+      .best:before {
+        display: none; } }
   .best__container {
     margin: 0 auto;
-    padding-top: 102px;
     position: relative;
+    height: 100%;
     display: flex;
     flex-direction: column; }
   .best__header {
-    margin-top: 4px;
+    margin-top: remy(102);
     display: flex;
     justify-content: center; }
     .best__header-content {
       display: flex;
       flex-direction: column;
-      max-width: 450px; }
+      max-width: remy(450); }
   .best__header-label {
     margin: auto;
-    font-size: 48px;
+    font-size: remy(48);
     font-weight: 700;
     text-transform: uppercase; }
   .best__header-caption {
     color: #666;
-    font-size: 18px;
-    margin-top: 7px;
+    font-size: remy(18);
+    margin-top: remy(7);
     text-align: center; }
   .best__content {
-    margin-top: 58px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    flex: 1; }
     .best__content ul {
-      display: flex; }
+      display: flex;
+      flex-wrap: wrap; }
       .best__content ul li {
-        max-width: 278px;
-        margin-right: 73px;
+        max-width: 17rem;
+        margin-right: 2.5rem;
         display: flex;
         align-items: center;
         position: relative; }
         .best__content ul li:last-child {
-          margin-right: 0px; }
+          margin-right: 0; }
           .best__content ul li:last-child:after {
             content: '';
             background: none; }
@@ -66,9 +74,28 @@
           content: '';
           background: url("/img/best/1.png");
           position: absolute;
-          right: -75px;
-          top: 52px;
-          width: 67px;
-          height: 21px; }
+          right: remy(-75);
+          top: remy(52);
+          width: remy(67);
+          height: remy(21); }
+        @media screen and (max-width: 768px) {
+          .best__content ul li {
+            max-width: 25rem;
+            margin-right: 0;
+            margin-top: 3rem; }
+            .best__content ul li:first-child {
+              margin-top: 0; } }
+    @media screen and (max-width: 768px) {
+      .best__content ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+        .best__content ul li {
+          margin-right: 0;
+          max-width: 100%;
+          height: 30%; }
+          .best__content ul li:after {
+            content: '';
+            background: none; } }
 
 /*# sourceMappingURL=best.css.map */

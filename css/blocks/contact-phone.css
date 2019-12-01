@@ -1,17 +1,21 @@
 .contact-phone {
-  font-family: "Alegreya Sans";
-  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: remy(24);
   text-transform: uppercase;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  z-index: 1;
+  color: #fff; }
   .contact-phone:before {
     content: '';
-    width: 11px;
-    height: 11px;
+    width: remy(11);
+    height: remy(11);
     margin-right: 5px;
     background: url("/img/intro/phone.png") center center/contain no-repeat; }
   .contact-phone--small {
-    font-size: 21px;
+    font-size: remy(21);
     color: #0f5a47; }
     .contact-phone--small:before {
       background: url("/img/intro/phone-dark.png") center center no-repeat; }

@@ -2,21 +2,51 @@
   background-color: #fff;
   color: #0d0d0d;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
-  .team__container {
-    margin: auto;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   .team:after {
     content: '';
     position: absolute;
-    top: -237px;
-    right: 0px;
-    width: 196px;
-    height: 578px;
-    z-index: 1;
+    top: remy(-237);
+    right: 0;
+    width: remy(196);
+    height: remy(578);
     background: url("/img/team/background.png") no-repeat; }
+  .team:before {
+    content: '';
+    position: absolute;
+    bottom: remy(-44);
+    left: remy(33);
+    width: remy(104);
+    height: remy(114);
+    z-index: 1;
+    background: url("/img/team/rasb.png"); }
+  .team__container {
+    margin: 0 auto;
+    padding-top: remy(64);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+  .team__header {
+    margin: 0 auto; }
+    .team__header h3 {
+      font-size: remy(48);
+      font-weight: 700;
+      text-transform: uppercase; }
+  .team__content {
+    display: flex;
+    align-items: center;
+    flex: 1; }
+    .team__content ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -1rem; }
+      .team__content ul li {
+        margin-left: 1rem;
+        width: 22%; }
+        @media screen and (max-width: 768px) {
+          .team__content ul li {
+            width: 46%; } }
+
+/*# sourceMappingURL=team.css.map */

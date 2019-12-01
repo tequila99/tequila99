@@ -1,11 +1,18 @@
+@import '../assets/_mixins.scss';
+
 .review-item {
   display: flex;
   background: #f8faf9;
-  max-width: 940px;
-  max-height: 345px;
+  max-width: remy(940);
+  max-height: remy(345);
   padding: 50px 180px 34px 45px;
   margin: auto;
   position: relative;
+  @include tablets {
+    flex-direction: column;
+    max-height: 100%;
+    padding: 50px 80px 34px 80px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -19,12 +26,17 @@
     width: 40%;
     margin: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       margin: auto;
     }
   }
   &__content {
     margin-left: 18px;
+    @include tablets {
+      margin-left: 0px
+    }
     padding-top: 14px;
     display: flex;
     flex-direction: column;
@@ -32,17 +44,27 @@
       color: #323232;
       font-size: 30px;
       font-weight: 700;
+      @include tablets {
+        text-align: center;
+      }
     }
     p {
       margin-top: 23px;
       font-size: 18px;
       color: #666666;
       line-height: 22px;;
+      @include tablets {
+        text-align: center;
+      }
     }
-    div {
+    span {
       margin-top: 26px;
+      display: block;
       color: #666666;
       font-weight: 700;
+      @include tablets {
+        text-align: center;
+      }
     }
   }
 }

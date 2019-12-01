@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,YAAG;EACD,OAAO,EAAE,IAAI;EACb,eAAG;IACD,MAAM,EAAE,OAAO;IACf,YAAY,EAAE,IAAI;IAClB,0BAAa;MACX,YAAY,EAAE,CAAC;AAMjB,+BAAQ;EACN,MAAM,EAAE,iBAAiB",
+"sources": ["user-nav.scss"],
+"names": [],
+"file": "user-nav.css"
+}

@@ -2,21 +2,21 @@
   background-color: #f8faf9;
   color: #0d0d0d;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
   .order__container {
     margin: auto;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex; }
+  .order__content {
+    width: 100%; }
   .order:after {
     content: '';
     position: absolute;
-    bottom: -79px;
-    right: 0px;
-    width: 190px;
-    height: 310px;
-    z-index: 1;
-    background: url("/img/order/background.png"); }
+    bottom: remy(-73);
+    right: remy(15);
+    width: remy(135);
+    height: remy(112);
+    z-index: 10;
+    background: url("/img/order/background.png") no-repeat; }
+
+/*# sourceMappingURL=order.css.map */

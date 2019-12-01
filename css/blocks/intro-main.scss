@@ -1,17 +1,28 @@
+@import '../assets/_mixins.scss';
 .intro-main {
   display: flex;
   flex-direction: column;
+  @include tablets {
+    align-items: center;
+  }
   h1 {
     font-weight: 700;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: remy(60);
+    line-height: remy(60);
     text-transform: uppercase;
+    @include tablets {
+      text-align: center;
+    }
+
   }
   &__caption {
-    margin-left: 5px;
-    font-size: 21px;
+    margin-left: remy(5);
+    font-size: remy(21);
     width: 90%;
-    margin-top: 11px;
+    margin-top: remy(11);
+    @include tablets {
+      text-align: center;
+    }
   }
   .button {
     margin-left: 5px;

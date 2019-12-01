@@ -1,18 +1,22 @@
-$bg-work: #f8faf9;
-$color-work: #0d0d0d;
+
+@import '../assets/_variables.scss';
+@import '../assets/_mixins.scss';
 .work {
-  background-color: $bg-work;
-  color: $color-work;
+  background-color: $bg-order;
+  color: $color;
   position: relative;
   display: flex;
+  @include tablets {
+    max-height: remy(600);
+  }
   &:after {
     content: '';
     position: absolute;
-    bottom:-104px;
+    bottom:remy(-104);
     right: 0px;
-    width: 200px;
-    height: 264px; 
-    z-index: 1;
+    width: remy(200);
+    height: remy(264); 
+    z-index: 10;
     overflow: hidden;
     background: url('/img/work/berry.png') left top no-repeat;    
   }
@@ -26,31 +30,34 @@ $color-work: #0d0d0d;
   //   background: url('/img/review/berry.png');
   }
   &__container {
-    margin: auto auto;
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    height: 100%;
   }
   &__header {
-    margin: 0 auto;
+    margin: remy(77) auto 0;
     h3 {
-      font-size: 48px;
+      font-size: remy(48);
       font-weight: 700;
       text-transform: uppercase;
     }
   }
   &__content {
-    margin-top: 44px;
+    // margin-top: remy(-77);
     display: flex;
     margin: auto;
-    max-width: 911px;
-    max-height: 500px;
+    max-width: remy(911);
+    max-height: remy(500);
     position: relative;
     &:after {
       content: '';
       position: absolute;
-      width: 90px;
-      height: 77px;
+      width: remy(90);
+      height: remy(77);
       top: 0;
       right: 0;
       background: url('/img/work/leaf1.png') no-repeat;
@@ -58,15 +65,21 @@ $color-work: #0d0d0d;
     &:before {
       content: '';
       position: absolute;
-      width: 72px;
-      height: 135px;
+      width: remy(72);
+      height: remy(135);
       bottom: 0;
       left: 0;
       background: url('/img/work/leaf2.png') no-repeat;
     }
     img {
-      margin: 58px 120px 38px 120px;
+      margin-top: remy(-77);
+      width: 100%;
+      height: 100%;
+      padding: remy(58) remy(120) remy(38) remy(120);
       display: block;
+      @include tablets {
+        padding: 3rem 4rem;
+      }
     }
   }
 }

@@ -1,0 +1,123 @@
+@import '../assets/_mixins.scss';
+@import '../assets/_variables.scss';
+.menu-acco {
+  width: 70%;
+	position: absolute;
+	right: 0;
+	top: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  @extend %clearfix;
+  &__item {
+
+    height: 100%;
+    display: flex;
+    &--active {
+      .menu-acco__trigger-text {
+        // color: $yellow;
+      }
+      .menu-acco__content {
+        width: 100%;
+      }
+      .menu-acco__text {
+        display: block;
+      }
+      .menu-acco__trigger {
+        &:last-child {
+          display: block;
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2f3234;
+            opacity: 0.93;
+          }
+        }
+      }
+    }    
+  }
+}
+
+.menu-acco__trigger {
+	width: remy(100);
+	display: block;
+	height: 100%;
+  // float: left;
+  display: flex;
+	@include cover;
+	text-decoration: none;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.4;
+  }
+  &--milk {
+    background-image: url('../../img/menu/milk.png')
+  }
+  &--fruit {
+    background-image: url('../../img/menu/fruit.png')
+  }
+  &--wildberry {
+    background-image: url('../../img/menu/wildberry.png')
+  }
+  &:last-child {
+    display: none;
+  }
+  @include phones {
+    width: remy(50);
+  }
+}
+
+.menu-acco__trigger-text {
+	font-size: remy(40);
+  color: #fff;
+  display: block;
+	text-align: center;
+	white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 90%;
+  z-index: 10;
+  margin-top: remy(-20);
+
+  @include phones {
+    font-size: remy(26);
+  }
+}
+
+.menu-acco__content {
+	height: 100%;
+	// float: left;
+  background: #2f3234;
+  opacity: 0.93;
+	width: 0;
+	overflow: hidden;
+}
+
+.menu-acco__text {
+	// @include ubuntu(light);
+  font-size: remy(14);
+  display: block;
+	color: #fff;
+	padding: remy(60) remy(30);
+	width: 100%;
+  line-height: 1.8;
+  display: none;
+
+  @include phones {
+    padding: remy(25) remy(15);
+  }
+}

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Батончики</title>
     <link
@@ -15,7 +15,7 @@
 
   <body>
     <div class="wrapper">
-      <!-- <header class="header">
+      <header class="header">
       <div class="container header__container">
         <div class="header__logo">
           <div class="logo"></div>
@@ -36,37 +36,12 @@
         <div class="header__contacts">
           <div class="contact-phone">8 800 903 90 90</div>
         </div>
+        <div class="header__burger"></div>
       </div>
-    </header> -->
+    </header>
 
       <main class="main">
         <section class="section intro">
-          <!-- <img src="/img/intro/main.png" alt="" class="intro__img intro__img--main" /> -->
-          <header class="header">
-            <div class="container header__container">
-              <div class="header__logo">
-                <a href="#" class="logo"></a>
-              </div>
-              <div class="header__menu">
-                <nav class="nav">
-                  <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Батончики</a></li>
-                    <li><a href="#">Команда</a></li>
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Как мы работаем</a></li>
-                    <li><a href="#">Контакты</a></li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="header__contacts">
-                <a href="tel:88009039090" class="contact-phone"
-                  >8 800 903 90 90</a
-                >
-              </div>
-            </div>
-          </header>
           <div class="container intro__container">
             <img
               src="/img/intro/main.png"
@@ -91,21 +66,21 @@
                   <li>
                     <div class="adv__item">
                       <div class="adv__item-img adv__item-img--natural"></div>
-                      <div class="adv__item-label">
+                      <span class="adv__item-label">
                         100% натуральный продукт
-                      </div>
+                      </span>
                     </div>
                   </li>
                   <li>
                     <div class="adv__item">
                       <div class="adv__item-img adv__item-img--deliver"></div>
-                      <div class="adv__item-label">3-5 дней доставка по РФ</div>
+                      <span class="adv__item-label">3-5 дней доставка по РФ</span>
                     </div>
                   </li>
                   <li>
                     <div class="adv__item">
                       <div class="adv__item-img adv__item-img--fit"></div>
-                      <div class="adv__item-label">Не портит фигуру</div>
+                      <span class="adv__item-label">Не портит фигуру</span>
                     </div>
                   </li>
                 </ul>
@@ -119,8 +94,8 @@
               <div class="best__header-content">
                 <h2 class="best__header-label">Почему CHOCCO?</h2>
                 <div class="best__header-caption">
-                  В нашем мире все происходит очень быстро, поэтому мы делаем
-                  батончики, которые удобно взять с собой.
+                  <p>В нашем мире все происходит очень быстро, поэтому мы делаем
+                  батончики, которые удобно взять с собой. </p>
                 </div>
               </div>
             </div>
@@ -136,14 +111,12 @@
                     <div class="best-item__content">
                       <h2 class="best-item__content-label">Полезно</h2>
                       <div class="best-item__content-caption">
-                        Натуральность - ключевое качество нашей продукции. Мы
-                        используем только природные ингредиенты.
+                        <p>Натуральность - ключевое качество нашей продукции. Мы
+                        используем только природные ингредиенты.</p>
                       </div>
                     </div>
                   </div>
                 </li>
-                <!--
-              -->
                 <li>
                   <div class="best-item">
                     <div class="best-item__header">
@@ -154,14 +127,12 @@
                     <div class="best-item__content">
                       <h2 class="best-item__content-label">Вкусно</h2>
                       <div class="best-item__content-caption">
-                        Нежный, ненавязчивый, изысканный – так клиенты описывают
-                        вкусовые качества наших батончиков.
+                        <p>Нежный, ненавязчивый, изысканный – так клиенты описывают
+                        вкусовые качества наших батончиков.</p>
                       </div>
                     </div>
                   </div>
                 </li>
-                <!--
-              -->
                 <li>
                   <div class="best-item">
                     <div class="best-item__header">
@@ -172,8 +143,8 @@
                     <div class="best-item__content">
                       <h2 class="best-item__content-label">Питательно</h2>
                       <div class="best-item__content-caption">
-                        Высокое содержание качественного белка, а также всех
-                        необходимых витаминов и минералов.
+                        <p>Высокое содержание качественного белка, а также всех
+                        необходимых витаминов и минералов.</p>
                       </div>
                     </div>
                   </div>
@@ -195,9 +166,9 @@
                       />
                     </div>
                     <div class="order-main__content">
-                      <button class="order-main__button">
-                        <div class="order-main__button-label">состав</div>
-                      </button>
+                        <button class="order-main__button">
+                            <div class="order-main__button-label">состав</div>
+                          </button>
                       <h3>Баночик "Морские водоросли"</h3>
                       <p>
                         Гранола из морских водорослей с овсом, миндалем и
@@ -225,6 +196,7 @@
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </li>
               </ul>
@@ -246,9 +218,9 @@
                       </div>
                       <div class="team-member__content">
                         <h5>Борис Федорович</h5>
-                        <div>
+                        <span class="team-member__position">
                           Оператор
-                        </div>
+                        </span>
                         <p>
                           С радостью поможет подобрать батончики и оформить
                           заказ.
@@ -265,9 +237,9 @@
                       </div>
                       <div class="team-member__content">
                         <h5>Алла Иванова</h5>
-                        <div class="team-member__position">
+                        <span class="team-member__position">
                           Оператор
-                        </div>
+                        </span>
                         <p>
                           С радостью поможет подобрать батончики и оформить
                           заказ.
@@ -278,15 +250,15 @@
                 </li>
                 <li>
                   <div class="team__list-item">
-                    <div class="team-member">
+                    <div class="team-member team-member--active">
                       <div class="team-member__img">
                         <img src="/img/team/kirill.png" alt="Кирилл Матросов" />
                       </div>
                       <div class="team-member__content">
                         <h5>Кирилл Матросов</h5>
-                        <div class="team-member__position">
+                        <span class="team-member__position">
                           Оператор
-                        </div>
+                        </span>
                         <p>
                           С радостью поможет подобрать батончики и оформить
                           заказ.
@@ -303,12 +275,11 @@
                       </div>
                       <div class="team-member__content">
                         <h5>Мила Рыжкова</h5>
-                        <div class="team-member__position">
+                        <span class="team-member__position">
                           Оператор
-                        </div>
+                        </span>
                         <p>
-                          С радостью поможет подобрать батончики и оформить
-                          заказ.
+                          По всем вопросам сотрудничества и рекламы писать только Миле.
                         </p>
                       </div>
                     </div>
@@ -319,7 +290,51 @@
           </div>
         </section>
         <sectiom class="section menu">
-          <div class="conatiner menu__container"></div>
+          <div class="conatiner menu__container">
+              <div class="menu__header">
+                  <h3>Меню</h3>
+                </div>
+              <ul class="menu-acco">
+                <li class="menu-acco__item"><a class="menu-acco__trigger menu-acco__trigger--milk" href="#">
+                    <span class="menu-acco__trigger-text">Батончики с молоком</span></a>
+                  <div class="menu-acco__content">
+                    <p class="menu-acco__text">
+                      Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                      Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                    </p>
+                  </div>
+                  <div class="menu-acco__trigger menu-acco__trigger--milk">
+                    <span class="menu-acco__trigger-text">Батончики с молоком</span>
+                  </div>
+                </li>
+                <li class="menu-acco__item menu-acco__item--active"><a class="menu-acco__trigger menu-acco__trigger--fruit" href="#">
+                    <span class="menu-acco__trigger-text">С мёдом и фруктами </span></a>
+                  <div class="menu-acco__content">
+                    <p class="menu-acco__text">
+                      Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                      Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                    </p>
+                  </div>
+                  <div class="menu-acco__trigger menu-acco__trigger--fruit">
+                    <span class="menu-acco__trigger-text">С мёдом и фрукт</span>
+                  </div>
+
+                </li>
+                <li class="menu-acco__item"><a class="menu-acco__trigger menu-acco__trigger--wildberry" href="#">
+                    <span class="menu-acco__trigger-text">Дикие ягоды</span></a>
+                  <div class="menu-acco__content">
+                    <p class="menu-acco__text">
+                      Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                      Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                    </p>
+                  </div>
+                  <div class="menu-acco__trigger menu-acco__trigger--wildberry">
+                    <span class="menu-acco__trigger-text">Дикие ягоды</span>
+                  </div>
+                </li>
+              </ul>
+
+          </div>
         </sectiom>
         <section class="section review">
           <div class="container review__container">
@@ -341,7 +356,7 @@
                       позволить. А батончик – он всегда под рукой. Это приятно и
                       удобно.
                     </p>
-                    <div>Алёна Хмельницкая</div>
+                    <span>Алёна Хмельницкая</span>
                   </div>
                 </div>
                 <div class="review__nav">
@@ -384,31 +399,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="review__nav">
-            <div class="review__nav-space">
-                <div class="user-nav">
-                    <ul>
-                      <li>
-                        <div class="user-nav__item user-nav__item--active">
-                          <div class="avatar"><img src="/img/review/alena-thmb.png" alt="Алена Хмельницкая"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="user-nav__item">
-                          <div class="avatar"><img src="/img/review/girl-thumb.png" alt="Какая-то девочка"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="user-nav__item">
-                          <div class="avatar"><img src="/img/review/boy-thmb.png" alt="Какой-то паренек"></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-      
-            </div>
 
-          </div> -->
           </div>
         </section>
         <section class="section work">
@@ -486,7 +477,6 @@
                       <div class="form__question">
                         <div class="form__question-options">
                           <label class="option">
-                            <!-- <div class="option__radio"></div> -->
                             <input
                               name="option"
                               type="radio"
@@ -494,25 +484,32 @@
                               class="option__radio"
                               checked
                             />
-                            <div class="option__title">Потребуется сдача</div>
+                            <div class="option__radio-fake"></div>
+                            <span class="option__radio-title">Потребуется сдача</span>
                           </label>
                           <label class="option">
-                            <!-- <div class="option__radio"></div> -->
                             <input
                               name="option"
                               type="radio"
                               value="yes"
                               class="option__radio"
                             />
-                            <div class="option__title">Оплата по карте</div>
+                            <div class="option__radio-fake"></div>
+                            <span class="option__radio-title">Оплата по карте</span>
                           </label>
                         </div>
                       </div>
                     </div>
                     <div class="form__row">
+                      <label class="checkbox">
+                        <input class="checkbox__check" name="callback" type="checkbox">
+                        <div class="checkbox__check-fake"></div>
+                        <div class="checkbox__check-title">Не перезванивать</div>
+                      </label>
+                    </div>
+
+                    <div class="form__row">
                       <div class="form__buttons">
-                        <!-- <input type="reset" value="Очистить">
-                                  <input type="submit" value="Отправить"> -->
                         <button type="submit" class="button">
                           <div class="button__label"><span>Заказать</span></div>
                         </button>

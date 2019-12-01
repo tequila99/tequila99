@@ -1,8 +1,7 @@
-$bg-order:#f8faf9;
-$color-order: #0d0d0d;
+@import '../assets/_variables.scss';
 .order {
   background-color: $bg-order;
-  color: $color-order;
+  color: $color;
   position: relative;
   display: flex;
   &__container {
@@ -11,14 +10,17 @@ $color-order: #0d0d0d;
     display: flex;
 
   }
+  &__content {
+    width: 100%;
+  }
   &:after {
     content: '';
     position: absolute;
-    bottom:-73px;
-    right: 15px;
-    width: 135px;
-    height: 112px; 
-    z-index: 1;
+    bottom:remy(-73);
+    right: remy(15);
+    width: remy(135);
+    height: remy(112); 
+    z-index:10;
     background: url('/img/order/background.png') no-repeat;    
   }
 }

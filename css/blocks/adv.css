@@ -4,6 +4,8 @@
     margin-right: 46px; }
     .adv ul li :last-child {
       margin-right: 0px; }
+.adv__item-label {
+  display: block; }
 .adv__item {
   display: flex; }
   .adv__item-img {
