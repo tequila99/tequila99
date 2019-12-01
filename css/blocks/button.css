@@ -4,6 +4,7 @@
   border: 2px solid transparent;
   padding: 18px 15px; }
   .button__label {
+    display: block;
     padding: 0px;
     margin: 0px;
     color: #0f5a47;
