@@ -1,8 +1,15 @@
 .adv {
+  width: 100%;
   ul {
+    width: 100%;
     display: flex;
-    li {
+    // justify-content: space-between;
+    li {      
       margin-right: 46px;
+      @include tablets {
+        // margin-right: 5rem;
+        margin-right: 0;
+      }
       :last-child {
         margin-right: 0px;
       }
@@ -10,14 +17,16 @@
   }
   &__item-label {
     display: block;
+    flex: .8;
   }
   &__item {
     display: flex;
+    align-items: center;
     &-img {
       min-width: 52px;
       min-height: 52px;
       display: flex;
-      margin-right: 7px;;
+      margin-right: 7px;      
       &--natural {
         background: url('/img/intro/icon_natural.png') center center  no-repeat;
       }

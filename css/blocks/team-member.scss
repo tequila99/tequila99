@@ -10,18 +10,23 @@
       margin: auto;
       width: 100%;
       height: 100%;
-
+      @include phones {
+        width: 75%;
+      }
     }
   }
   &__content {
     margin-top: remy(22);
+    @include phones {
+      margin-top: 8px;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     h5 {
       color: #323232;
-      font-size: remy(21);
+      font-size: 21px;
       font-weight: 500;
       display: flex;
       justify-content: center;

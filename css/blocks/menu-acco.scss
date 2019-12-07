@@ -2,6 +2,7 @@
 @import '../assets/_variables.scss';
 .menu-acco {
   width: 70%;
+  height: 100%;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -9,6 +10,9 @@
   z-index: 20;
   display: flex;
   @extend %clearfix;
+  @include phones {
+    width: 100%;
+  }
   &__item {
 
     height: 100%;
@@ -44,7 +48,7 @@
 }
 
 .menu-acco__trigger {
-	width: remy(100);
+	min-width: remy(100);
 	display: block;
 	height: 100%;
   // float: left;
@@ -80,7 +84,7 @@
 }
 
 .menu-acco__trigger-text {
-	font-size: remy(40);
+	font-size: remy(50);
   color: #fff;
   display: block;
 	text-align: center;
@@ -89,7 +93,7 @@
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
   left: 50%;
-  top: 90%;
+  top: 98%;
   z-index: 10;
   margin-top: remy(-20);
 

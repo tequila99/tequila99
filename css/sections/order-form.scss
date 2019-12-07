@@ -38,5 +38,10 @@ $color-work:#0f5a47;
   }
   &__content {
     margin-top: 55px;
+    @include tablets {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      margin-top: remy(32);
+    }
   }
 }

@@ -8,12 +8,23 @@
   }
   &__img {
     display: flex;
-    width: 55%;
-    background: url('/img/order/leafs.png') bottom left  no-repeat;
+    width: 83%;
+    background: url('/img/order/leafs.png') center center   no-repeat;
     img {
-      width: 80%;
+      width: 68%;
       margin: auto;
       display: block;
+      @include phones {
+        // background: none;
+        width: 100%;
+      }      
+    }
+    @include tablets {
+      width: 83%;
+    }
+    @include phones {
+      // background: none;
+      width: 83%;
     }
   }
   &__button {
@@ -26,7 +37,12 @@
     @include tablets {
       position: absolute;
       top: -2rem;
-      right: 0;
+      right: -5rem;
+    }
+    @include phones {
+      position: absolute;
+      top: 0;
+    right: 0;
     }
     
     &-label {
@@ -40,11 +56,12 @@
       flex-direction: column;
       &:before {
         content: '';
-        width: remy(51);
-        height: remy(51);
+        width: 51px;
+        height: 51px;
         margin: auto;
         background: url('/img/order/chocolate-bar.png') center center;
         margin-bottom: remy(7);
+
       }
     }
   }
@@ -53,32 +70,49 @@
     margin-left: remy(66);
     h3 {
       text-transform: uppercase;
-      font-size: remy(36);
+      font-size: remy(38);
       font-weight: 700;
-      margin-top: remy(37);
+      margin-top: remy(36);
     }
     p {
       margin-top: remy(22);
       color: #666;
       font-size: remy(18);
     }
+
     @include tablets {
       margin-left: 0;
-      max-width: 70%;
+      max-width: 94%;
       dispaly: flex;
       flex-direction: column;
       align-items: center;
       h3 {
         text-align: center;
+        font-size: 2rem;
+        padding: 0 10%;
+        margin-top: 3.6rem;
       }
       p {
         text-align: center;
+        // padding: 0 20%;
       }
     }
+    @include phones {
+      h3 {
+        font-size: 30px;
+        margin-top: 25px;
+  
+      }
+    }    
   }
   &__prop {
     margin-top: remy(37);
     display: flex;
+    @include tablets {
+      width: 70%;
+      margin-left: 25%;
+      margin-top: remy(42)
+    }
   }
   &__column {
     width: 50%;
@@ -88,20 +122,29 @@
   &__label {
     font-weight: 400;
     @include tablets {
-      text-align: center;
+      text-align: left;
     }
   }
   &__value {
     font-weight: 700;
     margin-top: remy(5);
     @include tablets {
-      text-align: center;
+      text-align: left;
     }
   }
   &__footer {
     display: flex;    
     align-items: center;
     margin-top: remy(55);
+    @include tablets {
+      width: 70%;
+      margin-left: 15%;
+      margin-top: remy(43)
+
+    }
+    @include phones {
+      margin-top: 50px;
+    }
   }
   &__price {
     width: 50%;
@@ -114,15 +157,23 @@
     }
     @include tablets {
       text-align: center;
+      font-size: remy(64);
+    }
+    @include phones {
+      font-size: 60px;
     }
   }
   &__button-order {
     display: flex;
+    width: 40%;
     button {
       flex: 1;
     }
     @include tablets {
-      margin: 0 auto;
+      margin-left: 0;
+    }
+    @include phones {
+      width: 50%;
     }
   }
 }

@@ -12,7 +12,12 @@
     right: 0;
     width: remy(196);
     height: remy(578); 
-    background: url('/img/team/background.png') no-repeat;    
+    background: url('/img/team/background.png') no-repeat;  
+    background-size: contain;
+    @include tablets {
+      right: -1rem;
+      top: -14rem;
+    }  
   }
   &:before {
     content: '';
@@ -32,10 +37,15 @@
     flex-direction: column;
     // justify-content: center;
     height: 100%;
+    @include tablets {
+      padding-top: 0;
+    }
   }
   &__header {
     margin: 0 auto;
-    
+    @include phones {
+      margin-top: 30px;
+    }
     h3 {
       font-size: remy(48);
       font-weight: 700;
@@ -44,6 +54,12 @@
   }
   &__content {
     // margin-top: remy(30);
+    @include tablets {
+      margin-top: 2.4rem;
+    }
+    @include phones {
+      margin-top: 3.5rem;
+    }
     display: flex;
     align-items: center;
     flex: 1;
@@ -57,7 +73,12 @@
         margin-left: 1rem;
         width: 22%;      
         @include tablets {
+          width: 47%;
+          margin-bottom: 1.4rem;
+        }
+        @include phones {
           width: 46%;
+          display: flex;
         }
       }
     }

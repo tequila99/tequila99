@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   @include tablets {
-    max-height: remy(600);
+    // max-height: remy(600);
   }
   &:after {
     content: '';
@@ -40,6 +40,9 @@
   }
   &__header {
     margin: remy(77) auto 0;
+    @include tablets {
+      margin-top: 1rem;
+    }
     h3 {
       font-size: remy(48);
       font-weight: 700;
@@ -53,6 +56,10 @@
     max-width: remy(911);
     max-height: remy(500);
     position: relative;
+    @include tablets {
+      margin-top: 8rem;
+      margin-bottom: 2rem;
+    }
     &:after {
       content: '';
       position: absolute;
@@ -78,7 +85,7 @@
       padding: remy(58) remy(120) remy(38) remy(120);
       display: block;
       @include tablets {
-        padding: 3rem 4rem;
+        padding: 0rem 0rem;
       }
     }
   }

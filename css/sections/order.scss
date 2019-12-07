@@ -4,6 +4,10 @@
   color: $color;
   position: relative;
   display: flex;
+  @include phones {
+    padding-left: 0;
+    padding-right: 0;
+  }
   &__container {
     margin: auto;
     position: relative;
@@ -22,5 +26,10 @@
     height: remy(112); 
     z-index:10;
     background: url('/img/order/background.png') no-repeat;    
+    background-size: contain;
+    @include tablets {
+      width: 12%;
+      right: 0;
+    }
   }
 }

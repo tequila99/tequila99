@@ -31,6 +31,9 @@ $color-order: #0d0d0d;
     display: flex;
     flex-direction: column;
     height: 100%;
+    @include tablets {
+      padding-top: 0;
+    }
   }
   &__header {
     margin: 0 auto;
@@ -47,12 +50,18 @@ $color-order: #0d0d0d;
     margin-top: remy(29);
     justify-content: center;
     flex: 1;
+    @include tablets {
+      margin-top: 4.2rem;
+    }
   }
   &__nav {
     display: flex;
     margin-top: remy(21);
     justify-content: center;
     align-items: center;
+    @include tablets {
+      margin-top: 6.5rem;
+    }
     &-space {
       margin-left: remy(16);
     }

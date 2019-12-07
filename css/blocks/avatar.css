@@ -1,6 +1,6 @@
 .avatar {
-  max-width: 82px;
-  max-height: 82px;
+  max-width: remy(82);
+  max-height: remy(82);
   position: relative;
   border-radius: 50%;
   overflow: hidden;
