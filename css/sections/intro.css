@@ -2,18 +2,25 @@
   background-color: #61c4d9;
   position: relative;
   display: flex; }
+  @media screen and (max-width: 544px) {
+    .intro {
+      padding-left: 0;
+      padding-right: 0; } }
   .intro__container {
     margin: auto auto;
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: remy(36);
-    margin-top: remy(90); }
+    margin-top: 14%; }
     @media screen and (max-width: 768px) {
       .intro__container {
         margin-top: 0;
         align-items: center; } }
+    @media screen and (max-width: 544px) {
+      .intro__container {
+        padding-left: 0;
+        padding-right: 0; } }
   .intro:before {
     content: '';
     position: absolute;
@@ -21,38 +28,60 @@
     right: 0;
     width: remy(512);
     height: remy(648);
-    background: url("/img/intro/patt.png"); }
-  .intro:after {
-    content: '';
-    position: absolute;
-    bottom: remy(-47);
-    right: remy(17);
-    width: remy(460);
-    height: remy(341);
-    z-index: 1;
-    background: url("/img/intro/background.png"); }
+    background: url("/img/intro/patt.png") no-repeat; }
+    @media screen and (max-width: 768px) {
+      .intro:before {
+        width: 70%;
+        top: 0rem;
+        right: 0rem; } }
   .intro__content {
-    width: 40%; }
+    width: 50%; }
     @media screen and (max-width: 768px) {
       .intro__content {
         width: 80%;
-        margin-top: 4rem; } }
+        margin-top: 1.5rem; } }
+    @media screen and (max-width: 768px) {
+      .intro__content {
+        margin-top: -4rem; } }
   .intro__footer {
-    margin-top: remy(62);
+    margin-top: 7%;
     justify-self: flex-end;
+    display: flex;
+    justify-content: center;
     max-width: remy(500); }
+    @media screen and (max-width: 768px) {
+      .intro__footer {
+        max-width: 100%;
+        width: 100%;
+        margin-left: 2rem;
+        margin-bottom: 0rem; } }
+    @media screen and (max-width: 544px) {
+      .intro__footer {
+        margin-left: 0;
+        margin-rigth: 0;
+        margin-bottom: 2rem; } }
   .intro__img {
     position: absolute;
     display: block;
-    width: 50%; }
+    width: 46%;
+    height: 84%;
+    z-index: 20;
+    background: url("/img/intro/background-new.png") center center/contain no-repeat; }
     .intro__img--main {
-      top: 50%;
-      right: remy(33);
+      top: 44%;
+      right: 1.3rem;
       transform: translateY(-50%); }
     @media screen and (max-width: 768px) {
       .intro__img {
         position: static;
-        width: 70%;
-        transform: none; } }
+        margin-top: -2rem;
+        width: 80%;
+        height: 31rem;
+        transform: none;
+        background: url("/img/intro/background-768.png") top center/contain no-repeat; } }
+    @media screen and (max-width: 544px) {
+      .intro__img {
+        margin-top: 0rem;
+        width: 70%; } }
 
 /*# sourceMappingURL=intro.css.map */

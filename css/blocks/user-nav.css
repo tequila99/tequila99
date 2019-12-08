@@ -3,6 +3,9 @@
   .user-nav ul li {
     cursor: pointer;
     margin-right: -4px; }
+    @media screen and (max-width: 768px) {
+      .user-nav ul li {
+        margin-right: 26px; } }
     .user-nav ul li:last-child {
       margin-right: 0; }
 .user-nav__item--active .avatar {

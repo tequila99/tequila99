@@ -1,8 +1,12 @@
 .review {
-  background-color: #fff;
+  background-color: #f8faf9;
   color: #0d0d0d;
   position: relative;
   display: flex; }
+  @media screen and (max-width: 544px) {
+    .review {
+      padding-left: 0;
+      padding-right: 0; } }
   .review:after {
     content: '';
     position: absolute;
@@ -11,7 +15,10 @@
     width: remy(139);
     height: remy(321);
     z-index: 1;
-    background: url("/img/review/background.png") no-repeat; }
+    background: url("/img/review/background-new.png") center center/contain no-repeat; }
+    @media screen and (max-width: 544px) {
+      .review:after {
+        width: 15%; } }
   .review:before {
     content: '';
     position: absolute;
@@ -19,7 +26,12 @@
     right: remy(14);
     width: remy(150);
     height: remy(86);
-    background: url("/img/review/berry.png"); }
+    background: url("/img/review/berry.png") center center/contain no-repeat; }
+    @media screen and (max-width: 544px) {
+      .review:before {
+        width: 30%;
+        right: 0;
+        top: 0; } }
   .review__container {
     padding-top: remy(60);
     margin: 0 auto;
@@ -27,23 +39,42 @@
     display: flex;
     flex-direction: column;
     height: 100%; }
+    @media screen and (max-width: 768px) {
+      .review__container {
+        padding-top: 0; } }
   .review__header {
     margin: 0 auto; }
     .review__header h3 {
       font-size: remy(48);
       font-weight: 700;
       text-transform: uppercase; }
+    @media screen and (max-width: 544px) {
+      .review__header {
+        margin-top: 70px; } }
   .review__content {
     display: flex;
     flex-direction: column;
     margin-top: remy(29);
     justify-content: center;
     flex: 1; }
+    @media screen and (max-width: 768px) {
+      .review__content {
+        margin-top: 4.2rem; } }
+    @media screen and (max-width: 544px) {
+      .review__content {
+        margin-top: 34px; } }
   .review__nav {
     display: flex;
     margin-top: remy(21);
     justify-content: center;
     align-items: center; }
+    @media screen and (max-width: 768px) {
+      .review__nav {
+        margin-top: 6.5rem; } }
+    @media screen and (max-width: 544px) {
+      .review__nav {
+        margin-top: 14px;
+        margin-bottom: 1rem; } }
     .review__nav-space {
       margin-left: remy(16); }
 

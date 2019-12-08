@@ -1,15 +1,22 @@
 .button {
   background-color: #fff;
-  border-radius: 40px;
+  border-radius: 2.3rem;
   border: 2px solid transparent;
-  padding: 18px 15px; }
+  padding: 1rem 0.8rem; }
+  @media screen and (max-width: 544px) {
+    .button {
+      padding: 1.3rem 1.8rem; } }
   .button__label {
     display: block;
     padding: 0px;
     margin: 0px;
     color: #0f5a47;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 1.2rem;
     font-weight: 700; }
+  .button--dark {
+    background-color: #0f5a47; }
+    .button--dark .button__label {
+      color: #fff; }
 
 /*# sourceMappingURL=button.css.map */

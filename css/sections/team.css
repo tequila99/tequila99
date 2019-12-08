@@ -10,16 +10,22 @@
     right: 0;
     width: remy(196);
     height: remy(578);
-    background: url("/img/team/background.png") no-repeat; }
+    z-index: 1;
+    background: url("/img/team/background.png") no-repeat;
+    background-size: contain; }
+    @media screen and (max-width: 768px) {
+      .team:after {
+        right: -1rem;
+        top: -14rem; } }
   .team:before {
     content: '';
     position: absolute;
     bottom: remy(-44);
     left: remy(33);
-    width: remy(104);
+    width: 15%;
     height: remy(114);
-    z-index: 1;
-    background: url("/img/team/rasb.png"); }
+    z-index: 30;
+    background: url("/img/team/rasb.png") center center/contain no-repeat; }
   .team__container {
     margin: 0 auto;
     padding-top: remy(64);
@@ -27,8 +33,14 @@
     display: flex;
     flex-direction: column;
     height: 100%; }
+    @media screen and (max-width: 768px) {
+      .team__container {
+        padding-top: 0; } }
   .team__header {
     margin: 0 auto; }
+    @media screen and (max-width: 544px) {
+      .team__header {
+        margin-top: 30px; } }
     .team__header h3 {
       font-size: remy(48);
       font-weight: 700;
@@ -37,6 +49,12 @@
     display: flex;
     align-items: center;
     flex: 1; }
+    @media screen and (max-width: 768px) {
+      .team__content {
+        margin-top: 2.4rem; } }
+    @media screen and (max-width: 544px) {
+      .team__content {
+        margin-top: 3.5rem; } }
     .team__content ul {
       display: flex;
       flex-wrap: wrap;
@@ -47,6 +65,11 @@
         width: 22%; }
         @media screen and (max-width: 768px) {
           .team__content ul li {
-            width: 46%; } }
+            width: 44%;
+            margin-bottom: 1.4rem; } }
+        @media screen and (max-width: 544px) {
+          .team__content ul li {
+            width: 44%;
+            display: flex; } }
 
 /*# sourceMappingURL=team.css.map */

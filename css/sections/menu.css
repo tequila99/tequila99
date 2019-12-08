@@ -1,7 +1,11 @@
 .menu {
-  background: url("../../img/menu/background.png") 50% no-repeat;
+  background: url("../../img/menu/background.png") center center no-repeat;
   background-size: cover;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      height: 61rem;
+      padding: 0; } }
   .menu:after {
     content: '';
     position: absolute;
@@ -16,6 +20,10 @@
     top: 10%;
     left: 10%;
     z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .menu__header {
+        top: 6.5rem;
+        left: 6%; } }
     .menu__header h3 {
       font-size: 3rem;
       font-weight: 700;

@@ -1,10 +1,17 @@
+
 $bg-order:#fff;
 $color-order: #0d0d0d;
+@import '../assets/_mixins';
 .review {
   background-color: $bg-order;
   color: $color-order;
   position: relative;
   display: flex;
+  @include phones {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -13,7 +20,10 @@ $color-order: #0d0d0d;
     width: remy(139);
     height: remy(321); 
     z-index: 1;
-    background: url('/img/review/background.png') no-repeat;    
+    @include phones {
+      width: 15%;
+    }
+    background: url('/img/review/background-new.png') center center /contain no-repeat;    
   }
   &:before {
     content: '';
@@ -21,8 +31,13 @@ $color-order: #0d0d0d;
     top:remy(36);
    right: remy(14);
     width: remy(150);
+    @include phones {
+      width: 30%;
+      right: 0;
+      top: 0;
+    }
     height: remy(86); 
-    background: url('/img/review/berry.png');
+    background: url('/img/review/berry.png') center center /contain no-repeat;
   }
   &__container {
     padding-top: remy(60);
@@ -42,6 +57,9 @@ $color-order: #0d0d0d;
       font-weight: 700;
       text-transform: uppercase;
     }
+    @include phones {
+      margin-top: 70px;
+    }
   }
   &__content {
     display: flex;
@@ -53,6 +71,10 @@ $color-order: #0d0d0d;
     @include tablets {
       margin-top: 4.2rem;
     }
+    @include phones {
+      margin-top: 34px;
+    }
+
   }
   &__nav {
     display: flex;
@@ -61,6 +83,10 @@ $color-order: #0d0d0d;
     align-items: center;
     @include tablets {
       margin-top: 6.5rem;
+    }
+    @include phones {
+      margin-top: 14px;
+      margin-bottom: 1rem;
     }
     &-space {
       margin-left: remy(16);

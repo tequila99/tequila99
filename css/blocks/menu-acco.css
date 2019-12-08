@@ -5,43 +5,95 @@
   clear: both; }
 
 .menu-acco {
-  width: 70%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 20;
+  width: 100%;
+  height: 100%;
+  position: relative;
   display: flex; }
-  .menu-acco__item {
+  .menu-acco__list-menu {
     height: 100%;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
     display: flex; }
-    .menu-acco__item--active .menu-acco__content {
+  .menu-acco__list-content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .menu-acco__content-item {
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+    .menu-acco__content-item .menu-acco__content {
+      position: absolute;
+      width: 0;
+      transition: width 1s; }
+      .menu-acco__content-item .menu-acco__content--milk {
+        right: 200px; }
+        @media screen and (max-width: 768px) {
+          .menu-acco__content-item .menu-acco__content--milk {
+            right: 0; } }
+      .menu-acco__content-item .menu-acco__content--fruit {
+        right: 100px; }
+        @media screen and (max-width: 768px) {
+          .menu-acco__content-item .menu-acco__content--fruit {
+            right: 0; } }
+      .menu-acco__content-item .menu-acco__content--wildberry {
+        right: 0; }
+    .menu-acco__content-item.active {
       width: 100%; }
-    .menu-acco__item--active .menu-acco__text {
+      .menu-acco__content-item.active .menu-acco__content {
+        z-index: 30;
+        width: 70%;
+        transition: width .3s; }
+        @media screen and (max-width: 768px) {
+          .menu-acco__content-item.active .menu-acco__content {
+            width: 100%; } }
+      .menu-acco__content-item.active .menu-acco__trigger--add {
+        display: block; }
+      .menu-acco__content-item.active .menu-acco__text {
+        display: block; }
+  @media screen and (max-width: 544px) {
+    .menu-acco {
+      width: 100%; } }
+  .menu-acco__close {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 26px;
+    right: 32px;
+    cursor: pointer;
+    background: url("/img/menu/close.svg") center center no-repeat; }
+  .menu-acco__item {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    cursor: pointer; }
+    .menu-acco__item--active .menu-acco__trigger--add {
       display: block; }
-    .menu-acco__item--active .menu-acco__trigger:last-child {
+    .menu-acco__item--active .menu-acco__content {
+      width: 600px;
+      z-index: 30; }
+    .menu-acco__item--active .menu-acco__text {
       display: block;
-      position: relative; }
-      .menu-acco__item--active .menu-acco__trigger:last-child:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #2f3234;
-        opacity: 0.93; }
+      width: 100%; }
 
 .menu-acco__trigger {
-  width: remy(100);
-  display: block;
+  min-width: 100px;
   height: 100%;
   display: flex;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   text-decoration: none;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .menu-acco__trigger:after {
     content: '';
     position: absolute;
@@ -51,20 +103,20 @@
     right: 0;
     background: #000;
     opacity: 0.4; }
+  .menu-acco__trigger--add {
+    display: none; }
   .menu-acco__trigger--milk {
     background-image: url("../../img/menu/milk.png"); }
   .menu-acco__trigger--fruit {
     background-image: url("../../img/menu/fruit.png"); }
   .menu-acco__trigger--wildberry {
     background-image: url("../../img/menu/wildberry.png"); }
-  .menu-acco__trigger:last-child {
-    display: none; }
   @media screen and (max-width: 544px) {
     .menu-acco__trigger {
       width: remy(50); } }
 
 .menu-acco__trigger-text {
-  font-size: remy(40);
+  font-size: remy(50);
   color: #fff;
   display: block;
   text-align: center;
@@ -73,7 +125,7 @@
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
   left: 50%;
-  top: 90%;
+  top: 98%;
   z-index: 10;
   margin-top: remy(-20); }
   @media screen and (max-width: 544px) {
@@ -85,15 +137,20 @@
   background: #2f3234;
   opacity: 0.93;
   width: 0;
-  overflow: hidden; }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex; }
 
 .menu-acco__text {
-  font-size: remy(14);
+  font-size: remy(16);
   display: block;
   color: #fff;
-  padding: remy(60) remy(30);
+  padding: remy(60) remy(127) remy(60) remy(30);
   width: 100%;
   line-height: 1.8;
+  text-align: justify;
   display: none; }
   @media screen and (max-width: 544px) {
     .menu-acco__text {

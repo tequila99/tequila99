@@ -1,61 +1,150 @@
 @import '../assets/_mixins.scss';
 @import '../assets/_variables.scss';
 .menu-acco {
-  width: 70%;
-  height: 100%;
-	position: absolute;
-	right: 0;
-	top: 0;
-  bottom: 0;
-  z-index: 20;
-  display: flex;
-  @extend %clearfix;
-  @include phones {
     width: 100%;
-  }
-  &__item {
-
     height: 100%;
+    position: relative;
     display: flex;
-    &--active {
-      .menu-acco__trigger-text {
-        // color: $yellow;
+
+  &__list-menu {
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+  
+  }
+
+  &__list-content {
+    position: absolute;
+    // z-index: 30;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  }
+  &__content-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    .menu-acco__content {
+      position: absolute;
+      width: 0;
+      transition: width 1s;
+      &--milk {
+        right: 200px;
+        @include tablets {
+          right: 0;
+        }
       }
+      &--fruit {
+        right: 100px;
+        @include tablets {
+          right: 0;
+        }
+      }
+      &--wildberry {
+        right: 0;
+      }
+    }
+    &.active {
+      width: 100%;
       .menu-acco__content {
-        width: 100%;
-      }
+        z-index: 30;
+        width: 70%;
+        transition: width .3s;
+        @include tablets {
+          width: 100%;
+        }
+        // &--milk {
+        //   width: calc(70%-200px);
+        // }
+        // &--fruit {
+        //   width: calc(70%-100px);
+        // }
+        // &--wildberry {
+        //   width: 70%;
+        // }
+      }  
+      .menu-acco__trigger--add {
+        display: block;
+        
+      }    
       .menu-acco__text {
         display: block;
       }
-      .menu-acco__trigger {
-        &:last-child {
-          display: block;
-          position: relative;
-          &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #2f3234;
-            opacity: 0.93;
-          }
-        }
+    }
+  }
+  // width: 70%;
+    @extend %clearfix;
+  @include phones {
+    width: 100%;
+  }
+  &__close {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 26px;
+    right: 32px;
+    cursor: pointer;
+    background: url('/img/menu/close.svg') center center no-repeat;
+  }
+  &__item {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    &--active {
+      .menu-acco__trigger--add {
+        display: block;
+        // color: $yellow;
       }
+      .menu-acco__content {
+        // width: 100%;
+        width: 600px;
+        z-index: 30;
+        // width: 70%;
+      }
+      .menu-acco__text {
+        display: block;
+        width: 100%;
+      }
+      // .menu-acco__trigger {
+      //   &:last-child {
+      //     display: block;
+      //     position: relative;
+      //     &:after {
+      //       content: '';
+      //       position: absolute;
+      //       top: 0;
+      //       left: 0;
+      //       right: 0;
+      //       bottom: 0;
+      //       background-color: #2f3234;
+      //       opacity: 0.93;
+      //     }
+      //   }
+      // }
     }    
   }
 }
 
 .menu-acco__trigger {
-	min-width: remy(100);
-	display: block;
+	min-width: 100px;
 	height: 100%;
   // float: left;
   display: flex;
 	@include cover;
 	text-decoration: none;
   position: relative;
+  cursor: pointer;
+  // z-index: 10;
   &:after {
     content: '';
     position: absolute;
@@ -65,6 +154,9 @@
     right: 0;
     background: #000;
     opacity: 0.4;
+  }
+  &--add {
+    display: none;
   }
   &--milk {
     background-image: url('../../img/menu/milk.png')
@@ -76,7 +168,7 @@
     background-image: url('../../img/menu/wildberry.png')
   }
   &:last-child {
-    display: none;
+    // display: none;
   }
   @include phones {
     width: remy(50);
@@ -107,18 +199,24 @@
 	// float: left;
   background: #2f3234;
   opacity: 0.93;
-	width: 0;
-	overflow: hidden;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+	// overflow: hidden;
 }
 
 .menu-acco__text {
 	// @include ubuntu(light);
-  font-size: remy(14);
+  font-size: remy(16);
   display: block;
 	color: #fff;
-	padding: remy(60) remy(30);
+	padding: remy(60) remy(127) remy(60) remy(30);
 	width: 100%;
   line-height: 1.8;
+  text-align: justify;
   display: none;
 
   @include phones {

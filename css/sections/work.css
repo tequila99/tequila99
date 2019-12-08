@@ -3,9 +3,6 @@
   color: #0d0d0d;
   position: relative;
   display: flex; }
-  @media screen and (max-width: 768px) {
-    .work {
-      max-height: remy(600); } }
   .work:after {
     content: '';
     position: absolute;
@@ -15,7 +12,7 @@
     height: remy(264);
     z-index: 10;
     overflow: hidden;
-    background: url("/img/work/berry.png") left top no-repeat; }
+    background: url("/img/work/berry.png") left top/contain no-repeat; }
   .work__container {
     margin: 0 auto;
     position: relative;
@@ -24,7 +21,11 @@
     align-items: center;
     height: 100%; }
   .work__header {
-    margin: remy(77) auto 0; }
+    margin: remy(77) auto 0;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .work__header {
+        margin-top: 1rem; } }
     .work__header h3 {
       font-size: remy(48);
       font-weight: 700;
@@ -35,6 +36,10 @@
     max-width: remy(911);
     max-height: remy(500);
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .work__content {
+        margin-top: 8rem;
+        margin-bottom: 2rem; } }
     .work__content:after {
       content: '';
       position: absolute;
@@ -42,7 +47,11 @@
       height: remy(77);
       top: 0;
       right: 0;
-      background: url("/img/work/leaf1.png") no-repeat; }
+      background: url("/img/work/leaf1.png") left top/contain no-repeat; }
+      @media screen and (max-width: 768px) {
+        .work__content:after {
+          width: 10%;
+          right: -40px; } }
     .work__content:before {
       content: '';
       position: absolute;
@@ -50,7 +59,11 @@
       height: remy(135);
       bottom: 0;
       left: 0;
-      background: url("/img/work/leaf2.png") no-repeat; }
+      background: url("/img/work/leaf2.png") right top/contain no-repeat; }
+      @media screen and (max-width: 768px) {
+        .work__content:before {
+          width: 10%;
+          left: -60px; } }
     .work__content img {
       margin-top: remy(-77);
       width: 100%;
@@ -59,6 +72,6 @@
       display: block; }
       @media screen and (max-width: 768px) {
         .work__content img {
-          padding: 3rem 4rem; } }
+          padding: 0rem 0rem; } }
 
 /*# sourceMappingURL=work.css.map */

@@ -6,9 +6,15 @@
   overflow: hidden;
   border: 6px solid transparent;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .avatar {
+      min-width: remy(105);
+      min-height: remy(105); } }
   .avatar img {
     display: block;
     margin: auto;
-    flex: 1; }
+    flex: 1;
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=avatar.css.map */

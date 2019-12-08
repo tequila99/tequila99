@@ -5,13 +5,16 @@
   background: #f8faf9;
   max-width: remy(940);
   max-height: remy(345);
-  padding: 50px 180px 34px 45px;
+  padding: 50px 20% 34px 5%;
   margin: auto;
   position: relative;
   @include tablets {
     flex-direction: column;
     max-height: 100%;
     padding: 50px 70px 34px 80px;
+  }
+  @include phones {
+    padding: 50px 29px 34px 29px;
   }
   &:before {
     content: '';
@@ -20,10 +23,13 @@
     right: 0;
     width: 127px;
     height: 167px; 
-    background: url('/img/review/pattern.png');    
+    background: url('/img/review/pattern.png'); 
+    @include phones {
+      width: 25%;
+    }   
   }
   &__img {
-    width: 40%;
+    width: 46%;
     margin: auto;
     display: flex;
     justify-content: center;

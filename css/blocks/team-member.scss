@@ -31,12 +31,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
       &:after {
         margin-left: 0.7rem;
         content: '';
         width: 9px;
-        height: 6px;
-        background: url('../../img/team/arrow_donw.svg') center center / contain
+        height: 9px;
+        background: url('../../img/team/arrow_donw.svg') center center / contain no-repeat;
       }
     }
     &__position {
@@ -71,7 +72,7 @@
     &__content {
       h5 {
         &:after {
-          background: url('../../img/team/arrow_up.svg') center center / contain
+          background: url('../../img/team/arrow_up.svg') center center / contain no-repeat;
         }
       }
       p {

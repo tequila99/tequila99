@@ -18,7 +18,7 @@
     height: remy(264); 
     z-index: 10;
     overflow: hidden;
-    background: url('/img/work/berry.png') left top no-repeat;    
+    background: url('/img/work/berry.png') left top / contain no-repeat;    
   }
   &:before {
   //   content: '';
@@ -40,6 +40,7 @@
   }
   &__header {
     margin: remy(77) auto 0;
+    text-align: center;
     @include tablets {
       margin-top: 1rem;
     }
@@ -67,7 +68,11 @@
       height: remy(77);
       top: 0;
       right: 0;
-      background: url('/img/work/leaf1.png') no-repeat;
+      background: url('/img/work/leaf1.png') left top / contain no-repeat;
+      @include tablets {
+        width: 10%;
+        right: -40px;
+      }
     }
     &:before {
       content: '';
@@ -76,7 +81,11 @@
       height: remy(135);
       bottom: 0;
       left: 0;
-      background: url('/img/work/leaf2.png') no-repeat;
+      background: url('/img/work/leaf2.png') right top /contain no-repeat;
+      @include tablets {
+        width: 10%;
+        left: -60px;
+      }
     }
     img {
       margin-top: remy(-77);

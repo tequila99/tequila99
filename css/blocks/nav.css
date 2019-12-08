@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap; }
   .nav ul li {
-    padding-right: 1rem; }
+    padding-right: 1.7rem; }
     .nav ul li :last-child {
       padding-right: none; }
     .nav ul li a {

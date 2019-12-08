@@ -4,10 +4,11 @@
   align-items: center; }
   @media screen and (max-width: 544px) {
     .best-item {
-      flex-direction: row; } }
+      flex-direction: row;
+      align-items: flex-start; } }
   .best-item__header-img {
-    width: remy(125);
-    height: remy(125);
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     overflow: hidden;
     background: #f2f5f4;
@@ -15,20 +16,20 @@
     display: flex; }
     .best-item__header-img--useful:after {
       content: '';
-      width: remy(70);
-      height: remy(70);
+      width: 74px;
+      height: 74px;
       margin: auto;
       background: url("/img/best/useful.png") no-repeat; }
     .best-item__header-img--tasty:after {
       content: '';
-      width: remy(74);
-      height: remy(74);
+      width: 74px;
+      height: 74px;
       margin: auto;
       background: url("/img/best/tasty.png") no-repeat; }
     .best-item__header-img--nutrient:after {
       content: '';
-      width: remy(74);
-      height: remy(74);
+      width: 74px;
+      height: 74px;
       margin: auto;
       background: url("/img/best/nutrient.png") no-repeat; }
   .best-item__content {
@@ -40,14 +41,16 @@
     @media screen and (max-width: 544px) {
       .best-item__content {
         align-items: flex-start;
-        margin-left: 2rem; } }
+        margin-left: 1rem;
+        margin-top: 0; } }
     .best-item__content-label {
       color: #000;
-      font-size: remy(27);
+      font-size: 28px;
       font-weight: 700; }
       @media screen and (max-width: 544px) {
         .best-item__content-label {
-          text-align: left; } }
+          text-align: left;
+          margin-top: 0.5rem; } }
     .best-item__content-caption {
       color: #666;
       text-align: center;

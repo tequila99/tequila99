@@ -13,7 +13,7 @@ html {
     font-size: 15px
   }
   @include phones {
-    font-size: 13px;
+    // font-size: 13px;
   }
 }
 
@@ -26,6 +26,7 @@ body {
   -webkit-fon-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $white;
+  // overflow: hidden;
   
 }
 .wrapper {
