@@ -27,7 +27,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .team-member__content h5:after {
         margin-left: 0.7rem;
         content: '';
@@ -42,8 +43,9 @@
       margin-top: remy(8); }
     .team-member__content p {
       position: absolute;
-      bottom: -3rem;
+      top: 5rem;
       display: none;
+      height: 0rem;
       left: 0;
       right: 0;
       text-align: center;
@@ -57,9 +59,10 @@
           position: static;
           width: 60%; } }
 
-.team-member--active .team-member__content h5:after {
+.team-member.active .team-member__content h5:after {
   background: url("../../img/team/arrow_up.svg") center center/contain no-repeat; }
-.team-member--active .team-member__content p {
-  display: block; }
+.team-member.active .team-member__content p {
+  display: block;
+  height: 5rem; }
 
 /*# sourceMappingURL=team-member.css.map */

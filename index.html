@@ -10,6 +10,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./js/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./js/owlcarousel/assets/owl.theme.default.min.css">  
 </head>
 
 <body>
@@ -150,7 +152,9 @@
       <section class="section order">
         <div class="container order__container">
           <div class="order__content">
-            <ul class="order__list">
+            <div class="order__nav order__nav--prev"></div>
+            <div class="order__nav order__nav--next"></div>
+            <ul class="owl-carousel owl-order order__list">
               <li class="order__list-item">
                 <div class="order-main">
                   <div class="order-main__img">
@@ -190,6 +194,87 @@
 
                 </div>
               </li>
+              <li class="order__list-item">
+                  <div class="order-main">
+                    <div class="order-main__img">
+                      <img src="/img/order/main.png" alt="Батончик морские водоросли" />
+                    </div>
+                    <div class="order-main__content">
+                      <button class="order-main__button">
+                        <span class="order-main__button-label">состав</span>
+                      </button>
+                      <h3>Баночик "Мюсли с медузами"</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sapiente deserunt recusandae aliquam pariatur unde. 
+                        Ipsam eos iusto vel atque tenetur aperiam numquam mollitia 
+                        similique error. Sapiente iste saepe consectetur in?                  
+                      </p>
+                      <div class="order-main__prop">
+                        <div class="order-main__column">
+                          <div class="order-main__label">Калорийность</div>
+                          <div class="order-main__value">320 ккал</div>
+                        </div>
+                        <div class="order-main__column">
+                          <div class="order-main__label">Вес</div>
+                          <div class="order-main__value">980 грамм</div>
+                        </div>
+                      </div>
+                      <div class="order-main__footer">
+                        <div class="order-main__price">245</div>
+                        <div class="order-main__button-order">
+                          <button class="button button--dark">
+                            <span class="button__label">
+                              Заказать
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </li>
+                <li class="order__list-item">
+                    <div class="order-main">
+                      <div class="order-main__img">
+                        <img src="/img/order/main.png" alt="Батончик морские водоросли" />
+                      </div>
+                      <div class="order-main__content">
+                        <button class="order-main__button">
+                          <span class="order-main__button-label">состав</span>
+                        </button>
+                        <h3>Баночик "Мюсли с медузами"</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Sapiente deserunt recusandae aliquam pariatur unde. 
+                          Ipsam eos iusto vel atque tenetur aperiam numquam mollitia 
+                          similique error. Sapiente iste saepe consectetur in?                  
+                        </p>
+                        <div class="order-main__prop">
+                          <div class="order-main__column">
+                            <div class="order-main__label">Калорийность</div>
+                            <div class="order-main__value">320 ккал</div>
+                          </div>
+                          <div class="order-main__column">
+                            <div class="order-main__label">Вес</div>
+                            <div class="order-main__value">980 грамм</div>
+                          </div>
+                        </div>
+                        <div class="order-main__footer">
+                          <div class="order-main__price">245</div>
+                          <div class="order-main__button-order">
+                            <button class="button button--dark">
+                              <span class="button__label">
+                                Заказать
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+    
+                    </div>
+                  </li>              
+  
             </ul>
           </div>
         </div>
@@ -208,7 +293,7 @@
                       <img src="/img/team/boris.png" alt="Борис Федорович" />
                     </div>
                     <div class="team-member__content">
-                      <h5>Борис Федорович</h5>
+                      <h5 class='team-member__trigger'>Борис Федорович</h5>
                       <span class="team-member__position">
                         Оператор
                       </span>
@@ -227,26 +312,7 @@
                       <img src="/img/team/alla.png" alt="Алла Иванова" />
                     </div>
                     <div class="team-member__content">
-                      <h5>Алла Иванова</h5>
-                      <span class="team-member__position">
-                        Оператор
-                      </span>
-                      <p>
-                        С радостью поможет подобрать батончики и оформить
-                        заказ.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="team__list-item">
-                  <div class="team-member team-member--active">
-                    <div class="team-member__img">
-                      <img src="/img/team/kirill.png" alt="Кирилл Матросов" />
-                    </div>
-                    <div class="team-member__content">
-                      <h5>Кирилл Матросов</h5>
+                      <h5 class='team-member__trigger'>Алла Иванова</h5>
                       <span class="team-member__position">
                         Оператор
                       </span>
@@ -262,18 +328,39 @@
                 <div class="team__list-item">
                   <div class="team-member">
                     <div class="team-member__img">
-                      <img src="/img/team/mila.png" alt="Мила Рыжкова" />
+                      <img src="/img/team/kirill.png" alt="Кирилл Матросов" />
                     </div>
                     <div class="team-member__content">
-                      <h5>Мила Рыжкова</h5>
+                      <h5 class='team-member__trigger'>Кирилл Матросов</h5>
                       <span class="team-member__position">
                         Оператор
                       </span>
                       <p>
-                        По всем вопросам сотрудничества и рекламы писать только Миле.
+                        С радостью поможет подобрать батончики и оформить
+                        заказ.
                       </p>
                     </div>
                   </div>
+                </div>
+              </li>
+              <li>
+                <div class="team__list-item">
+                  <div class="team-member">
+                      <div class="team-member__img">
+                        <img src="/img/team/mila.png" alt="Мила Рыжкова" />
+                      </div>
+                      <div class="team-member__content">
+                        <h5 class='team-member__trigger'>Мила Рыжкова</h5>
+                        <span class="team-member__position">
+                          Оператор
+                        </span>
+                        <p>
+                            По всем вопросам сотрудничества 
+                            и рекламы писать только Миле.
+                        </p>
+                      </div>
+                    </div>
+
                 </div>
               </li>
             </ul>
@@ -378,28 +465,75 @@
           </div>
           <div class="review__content">
             <div class="review__content-center">
-              <div class="review-item">
-                <div class="review-item__img">
-                  <img src="/img/review/alena.png" alt="Алёна Хмельницкая" />
-                </div>
-                <div class="review-item__content">
-                  <h4>Лучший перекус</h4>
-                  <p>
-                    Я ем малыми порциями, но часто. Это повышает мою
-                    продуктивность в разы. В течение дня сижу за компьютером и
-                    часто отходить в кафе или на кухню просто не могу себе
-                    позволить. А батончик – он всегда под рукой. Это приятно и
-                    удобно.
-                  </p>
-                  <span>Алёна Хмельницкая</span>
-                </div>
-              </div>
+              <ul class="owl-carousel owl-review review__list">
+                <li class='review__item'>
+                    <div class="review-item">
+                        <div class="review-item__img">
+                          <img src="/img/review/alena.png" alt="Алёна Хмельницкая" />
+                        </div>
+                        <div class="review-item__content">
+                          <h4>Лучший перекус</h4>
+                          <p>
+                            Я ем малыми порциями, но часто. Это повышает мою
+                            продуктивность в разы. В течение дня сижу за компьютером и
+                            часто отходить в кафе или на кухню просто не могу себе
+                            позволить. А батончик – он всегда под рукой. Это приятно и
+                            удобно.
+                          </p>
+                          <span>Алёна Хмельницкая</span>
+                        </div>
+                      </div>
+        
+                </li>
+                <li class='review__item'>
+                    <div class="review-item">
+                        <div class="review-item__img">
+                          <img src="/img/review/maria.png" alt="Мария Орлова" />
+                        </div>
+                        <div class="review-item__content">
+                          <h4>Лучшие батончики 
+                              премиум уровня</h4>
+                          <p>
+                            Батончики понравились. На мой
+                            взгляд слегка завышена цена по 
+                            сравнению с конкурентами, однако, 
+                            как говорится – оно того стоит. 
+                            Нравится носить с собой, нравится 
+                            держать в руке. Ну и конечно же, кушать. 
+                            Идеально утоляют голод, хоть и не надолго. 
+                            Через час уже ем ещё один. 
+                            Но это скорее плюс, чем минус.
+                          </p>
+                          <span>Мария Орлова</span>
+                        </div>
+                      </div>
+        
+                </li>
+                <li class='review__item'>
+                    <div class="review-item">
+                        <div class="review-item__img">
+                          <img src="/img/review/boy.png" alt="Какой-то паренек" />
+                        </div>
+                        <div class="review-item__content">
+                          <h4>Лучший перекус</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Quasi ipsa, soluta, fuga commodi itaque alias 
+                            consectetur aut non magni nihil quia? Minus consequatur 
+                            quis aspernatur nostrum facilis, nemo sapiente. Distinctio!
+                          </p>
+                          <span>Какой-то паренек</span>
+                        </div>
+                      </div>
+        
+                </li>
+              </ul>
               <div class="review__nav">
                 <div class="review__nav-space">
                   <div class="user-nav">
                     <ul>
                       <li>
-                        <div class="user-nav__item user-nav__item--active">
+                        <div class="user-nav__item active">
                           <div class="avatar">
                             <img src="/img/review/alena-thmb.png" alt="Алена Хмельницкая" />
                           </div>
@@ -445,49 +579,57 @@
           </div>
           <div class="order-form__content">
             <div class="form">
-              <form action="" class="form__elem">
+              <form action="" class="form__elem" id='main-form'>
                 <div class="form__col">
                   <div class="form__row">
                     <label class="form__block">
-                      <div class="form__block-title">Имя</div>
-                      <input placeholder="Андрей" type="text" class="form__input" />
+                      <div class="form__block-title">Имя *</div>
+                      <input placeholder="Андрей" type="text" class="form__input" name='name' required/>
+                      <div class='form__error'></div>
                     </label>
                     <label class="form__block">
-                      <div class="form__block-title">Телефон</div>
-                      <input placeholder="89022348912" type="text" class="form__input" />
+                      <div class="form__block-title">Телефон *</div>
+                      <input placeholder="89022348912" type="text" class="form__input" name='phone' required/>
+                      <div class='form__error'></div>
                     </label>
                   </div>
                   <div class="form__row">
                     <label class="form__block">
                       <div class="form__block-title">Улица</div>
-                      <input placeholder="" type="text" class="form__input" />
+                      <input placeholder="" type="text" class="form__input" name='street'/>
+                      <div class='form__error'></div>
                     </label>
                   </div>
                   <div class="form__row">
                     <label class="form__block">
                       <div class="form__block-title">Дом</div>
-                      <input placeholder="" type="text" class="form__input" />
+                      <input placeholder="" type="text" class="form__input" name='house'/>
+                      <div class='form__error'></div>
                     </label>
                     <label class="form__block">
                       <div class="form__block-title">Корпус</div>
-                      <input placeholder="" type="text" class="form__input" />
+                      <input placeholder="" type="text" class="form__input" name='structure'/>
+                      <div class='form__error'></div>
                     </label>
                     <label class="form__block">
                       <div class="form__block-title">Квартира</div>
-                      <input placeholder="" type="text" class="form__input" />
+                      <input placeholder="" type="text" class="form__input" name='flat'/>
+                      <div class='form__error'></div>
                     </label>
                     <label class="form__block">
                       <div class="form__block-title">Этаж</div>
-                      <input placeholder="" type="text" class="form__input" />
+                      <input placeholder="" type="text" class="form__input" name='floor'/>
+                      <div class='form__error'></div>
                     </label>
                   </div>
                 </div>
                 <div class="form__col">
                   <div class="form__row">
                     <label class="form__block">
-                      <div class="form__block-title">Комментарий</div>
-                      <textarea name="" placeholder="Мне понравилось"
-                        class="form__input form__input--textarea"></textarea>
+                      <div class="form__block-title">Комментарий *</div>
+                      <textarea placeholder="Мне понравилось" name='comment'
+                        class="form__input form__input--textarea" required></textarea>
+                        <div class='form__error'></div>
                     </label>
 
                   </div>
@@ -504,21 +646,27 @@
                           <div class="option__radio-fake"></div>
                           <span class="option__radio-title">Оплата по карте</span>
                         </label>
+                        
                       </div>
                     </div>
+                    <div class='form__error'></div>
                   </div>
                   <div class="form__row">
                     <label class="checkbox">
                       <input class="checkbox__check" name="callback" type="checkbox">
                       <div class="checkbox__check-fake"></div>
                       <div class="checkbox__check-title">Не перезванивать</div>
+                      <div class='form__error'></div>
                     </label>
                   </div>
 
                   <div class="form__row">
                     <div class="form__buttons">
-                      <button type="submit" class="button">
+                      <button type='submit' class="button" id='submit-button'>
                         <span class="button__label">Заказать</span>
+                      </button>
+                      <button type='reset' class="button button__cancel" id='reset-button'>
+                        <span class="button__label">Очистить</span>
                       </button>
                     </div>
                   </div>
@@ -566,7 +714,39 @@
       </li>
     </ul>
   </div>
+  <div class="overlay">
+    <div class="overlay__container">
+      <p class="overlay__text"></p>
+      <div class="overlay__close">
+      </div>
+    </div>
+  </div>
+  <div class="hamburger-menu">
+      <div class="logo hamburger-menu__logo">
+        <!-- <a class="logo" href="#"><img src="./img/intro/logo.png"></a> -->
+      </div>
+      <div class="hamburger-menu__items">
+        <nav class="nav nav__hamburger">
+                <ul>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Батончики</a></li>
+                  <li><a href="#">Команда</a></li>
+                  <li><a href="#">Меню</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Как мы работаем</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+        </nav>
+      </div>
+      <a class="hamburger-menu__close" href="#">
+        <!-- <svg class="hamburger-menu__close-icon">
+          <use xlink:href="./img/sprite/sprite.svg#close"></use>
+        </svg> -->
+      </a>
+    </div>  
+  <script src="./js/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./js/owlcarousel/owl.carousel.min.js"></script>
   <script src="./main.js"></script>
 </body>
 
-</html>
+</html>/

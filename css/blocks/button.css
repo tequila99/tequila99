@@ -2,7 +2,8 @@
   background-color: #fff;
   border-radius: 2.3rem;
   border: 2px solid transparent;
-  padding: 1rem 0.8rem; }
+  padding: 1rem 0.8rem;
+  cursor: pointer; }
   @media screen and (max-width: 544px) {
     .button {
       padding: 1.3rem 1.8rem; } }
@@ -18,5 +19,11 @@
     background-color: #0f5a47; }
     .button--dark .button__label {
       color: #fff; }
+  .button__cancel {
+    background-color: transparent; }
+    .button__cancel .button__label {
+      color: #0f5a47;
+      font-weight: 400;
+      text-transform: none; }
 
 /*# sourceMappingURL=button.css.map */

@@ -8,7 +8,7 @@
         margin-right: 26px; } }
     .user-nav ul li:last-child {
       margin-right: 0; }
-.user-nav__item--active .avatar {
+.user-nav__item.active .avatar {
   border: 6px solid #0f5a47; }
 
 /*# sourceMappingURL=user-nav.css.map */

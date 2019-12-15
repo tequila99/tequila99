@@ -12,7 +12,21 @@
     position: relative;
     display: flex; }
   .order__content {
-    width: 100%; }
+    width: 100%;
+    position: relative; }
+  .order__nav {
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer; }
+    .order__nav--prev {
+      background: url("/img/order/arrow-prev.png") center center/cover no-repeat;
+      left: -1.5rem; }
+    .order__nav--next {
+      background: url("/img/order/arrow-next.png") center center/cover no-repeat;
+      right: -1.5rem; }
   .order:after {
     content: '';
     position: absolute;

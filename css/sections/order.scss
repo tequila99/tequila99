@@ -17,6 +17,23 @@
   }
   &__content {
     width: 100%;
+    position: relative;
+  }
+  &__nav {
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &--prev {
+      background: url('/img/order/arrow-prev.png') center center /cover no-repeat;
+      left: -1.5rem;
+    }
+    &--next {
+      background: url('/img/order/arrow-next.png') center center /cover no-repeat;
+      right: -1.5rem;
+    }
   }
   &:after {
     content: '';

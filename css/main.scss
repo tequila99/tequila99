@@ -27,8 +27,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $white;
   // overflow: hidden;
+  position: relative;
   
 }
+
 .wrapper {
   position: relative;
   display: flex;
@@ -110,3 +112,5 @@ ul li {
 @import './blocks/user-nav.scss';
 @import './blocks/avatar.scss';
 @import './blocks/menu-acco.scss';
+@import './blocks/overlay.scss';
+@import './blocks/hamburger-menu.scss'

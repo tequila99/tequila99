@@ -5,7 +5,7 @@
   background: #f8faf9;
   max-width: remy(940);
   max-height: remy(345);
-  padding: 50px 20% 34px 5%;
+  padding: 50px 10% 34px 2rem;
   margin: auto;
   position: relative;
   @include tablets {
@@ -29,8 +29,9 @@
     }   
   }
   &__img {
-    width: 46%;
-    margin: auto;
+    // width: 46%;
+    width: 50rem;
+    margin: 1.5rem auto 0;
     display: flex;
     justify-content: center;
     align-items: center;

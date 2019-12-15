@@ -3,7 +3,7 @@
   background: #f8faf9;
   max-width: remy(940);
   max-height: remy(345);
-  padding: 50px 20% 34px 5%;
+  padding: 50px 10% 34px 2rem;
   margin: auto;
   position: relative; }
   @media screen and (max-width: 768px) {
@@ -26,8 +26,8 @@
       .review-item:before {
         width: 25%; } }
   .review-item__img {
-    width: 46%;
-    margin: auto;
+    width: 50rem;
+    margin: 1.5rem auto 0;
     display: flex;
     justify-content: center;
     align-items: center; }

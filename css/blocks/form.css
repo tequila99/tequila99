@@ -3,6 +3,12 @@
   width: 100%;
   height: 100%;
   font-size: remy(18); }
+  .form__error {
+    height: 1rem;
+    margin-top: 0.3rem;
+    color: red;
+    font-size: .7rem;
+    font-weight: 700; }
   .form__elem {
     display: flex;
     margin: auto; }
@@ -37,7 +43,7 @@
   .form__row {
     display: flex;
     flex-direction: row;
-    margin-top: 20px; }
+    margin-top: 10px; }
     .form__row:first-child {
       margin-top: 0; }
   .form__input {

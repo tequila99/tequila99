@@ -4,9 +4,11 @@
   border-radius: 2.3rem;
   border: 2px solid transparent;
   padding: 1rem 0.8rem;
+  cursor: pointer;
   @include phones {
     padding: 1.3rem 1.8rem;
   }
+
   &__label {
     display: block;
     padding: 0px;
@@ -22,4 +24,12 @@
       color: #fff;
     }
   }
+  &__cancel {
+    background-color: transparent;
+    .button__label {
+      color: #0f5a47;
+      font-weight: 400;
+      text-transform: none;
+    }
+  }  
 }

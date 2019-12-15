@@ -1,4 +1,5 @@
 @import '../assets/_variables.scss';
+@import '../assets/_mixins.scss';
 .nav {
   ul {
     display: flex;
@@ -12,6 +13,20 @@
         font-size: remy(18);
         color: $white;
         text-decoration: none;
+      }
+    }
+  }
+  &__hamburger {
+    @include tablets {
+      ul {
+        flex-direction: column;
+        li {
+          padding-right: 0;
+          padding-bottom: 1.5rem;
+          :last-child {
+            padding-bottom: 0;
+          }
+        }
       }
     }
   }

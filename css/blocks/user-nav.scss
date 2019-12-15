@@ -14,7 +14,7 @@
     }
   }
   &__item {
-    &--active {
+    &.active {
       .avatar {
         border: 6px solid #0f5a47;
       }
