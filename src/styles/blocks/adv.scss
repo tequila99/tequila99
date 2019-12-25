@@ -24,19 +24,15 @@
     display: flex;
     align-items: center;
     &-img {
-      min-width: 52px;
-      min-height: 52px;
+      // min-width: 52px;
+      // min-height: 52px;
+      width: 52px;
+      height: 52px;
       display: flex;
+      fill: none;
+      stroke:#abf4fd;
+      stroke-width: .6;
       margin-right: 7px;      
-      &--natural {
-        background: url('/images/intro/icon_natural.png') center center  no-repeat;
-      }
-      &--deliver {
-        background: url('/images/intro/icon_delver.png') center center no-repeat;
-      }
-      &--fit {
-        background: url('/images/intro/icon_fit.png') center center no-repeat;
-      }
     }
   }
 }

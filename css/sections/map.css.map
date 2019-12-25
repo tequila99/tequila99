@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,IAAK;EACH,UAAU,EAAE,4DAA8D;EAC1E,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,IAAI;EC2Dd,oCAAwC;ID9DzC,IAAK;MAKD,UAAU,EAAE,SAAS",
-"sources": ["map.scss","../assets/_mixins.scss"],
-"names": [],
-"file": "map.css"
-}

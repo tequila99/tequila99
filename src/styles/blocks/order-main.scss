@@ -7,6 +7,7 @@
     flex-direction:column;
     align-items: center;
   }
+  
   &__img {
     display: flex;
     width: 83%;
@@ -28,12 +29,23 @@
       width: 83%;
     }
   }
+  &__menu {
+    width: 270px;
+    position: absolute;
+    top: 0;
+    right: -270px;
+    border: 1px grey solid;
+    background: #fff;
+    opacity: .7;
+    z-index: 100;
+  }
   &__button {
     // display: flex;
     // flex-direction: column;
     padding: remy(10) remy(20);
     border-radius: remy(5);
     background: #00accf;
+    position:relative;
     border: none;
     @include tablets {
       position: absolute;
@@ -45,7 +57,12 @@
       top: 0;
     right: 0;
     }
-    
+    &-img {
+      width: 50px;
+      height: 50px;
+      fill: white;
+      stroke: white;
+    }
     &-label {
       margin: 0 auto;
       display: block;
@@ -55,15 +72,15 @@
       text-transform: uppercase;
       display: flex;
       flex-direction: column;
-      &:before {
-        content: '';
-        width: 51px;
-        height: 51px;
-        margin: auto;
-        background: url('/images/order/chocolate-bar.png') center center;
-        margin-bottom: remy(7);
+      // &:before {
+      //   content: '';
+      //   width: 51px;
+      //   height: 51px;
+      //   margin: auto;
+      //   background: url('/images/order/chocolate-bar.png') center center;
+      //   margin-bottom: remy(7);
 
-      }
+      // }
     }
   }
   &__content {

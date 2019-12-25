@@ -14,6 +14,8 @@ const uglyfy = require('gulp-uglyfly');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
+const imagemin =require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
 
 const { DIST_PATH, SRC_PATH, STYLES_LIBS, JS_LIBS } = require('./gulp.config');
 
@@ -35,12 +37,13 @@ task("copy:html", () => {
 });
 
 task("copy:img", () => {
-  return src([
-    `${SRC_PATH}/images/**/*.png`,
-    `${SRC_PATH}/images/**/*.jpg`,
-    `${SRC_PATH}/images/**/*.jpeg`
-  ])
+  return src(`${SRC_PATH}/images/**/*.{png,jpg,jpeg}`)
     .pipe(dest(`${DIST_PATH}/images/`))
+    .pipe(imagemin({ //сжатие картинок
+      progressive: true,
+      plugins: [pngquant()],
+      interlaced: true
+    }))
     .pipe(reload({ stream: true }));
 });
 
@@ -117,14 +120,14 @@ task('watch', () => {
   watch(`${SRC_PATH}/*.html`, series("copy:html"));
   watch(`${SRC_PATH}/scripts/**/*.js`, series('scripts'));
   watch(`${SRC_PATH}/images/icons/*.svg`, series('icons'));
-  watch(`${SRC_PATH}/images/**/*.(png|jpg|jpeg)`, series('copy:img'))
+  watch(`${SRC_PATH}/images/**/*.{png|jpg|jpeg}`, series('copy:img'))
 })
 
 task(
   "default", 
   series(
     "clean", 
-    parallel("copy:html", "copy:img","styles", "scripts", "icons"),
+    parallel("copy:html", "copy:img", "styles", "scripts", "icons"),
     parallel('watch', "server")
   )
 );

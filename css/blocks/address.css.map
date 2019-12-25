@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,QAAS;EACP,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI",
-"sources": ["address.scss"],
-"names": [],
-"file": "address.css"
-}
