@@ -1,0 +1,83 @@
+@import '../assets/_mixins.scss';
+
+.review-item {
+  display: flex;
+  background: #f8faf9;
+  max-width: remy(940);
+  max-height: remy(345);
+  padding: 50px 10% 34px 2rem;
+  margin: auto;
+  position: relative;
+  @include tablets {
+    flex-direction: column;
+    max-height: 100%;
+    padding: 50px 70px 34px 80px;
+  }
+  @include phones {
+    padding: 50px 29px 34px 29px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 127px;
+    height: 167px; 
+    background: url('/images/review/pattern.png'); 
+    @include phones {
+      width: 25%;
+    }   
+  }
+  &__img {
+    // width: 46%;
+    width: 50rem;
+    margin: 1.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablets {
+      width: 60%;
+    }
+    img {
+      margin: auto;
+      @include tablets {
+        width: 86%;
+      }
+    }
+  }
+  &__content {
+    margin-left: 18px;
+    @include tablets {
+      margin-left: 0px
+    }
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    h4 {
+      color: #323232;
+      font-size: 30px;
+      font-weight: 700;
+      @include tablets {
+        text-align: center;
+      }
+    }
+    p {
+      margin-top: 23px;
+      font-size: 18px;
+      color: #666666;
+      line-height: 22px;;
+      @include tablets {
+        text-align: center;
+      }
+    }
+    span {
+      margin-top: 26px;
+      display: block;
+      color: #666666;
+      font-weight: 700;
+      @include tablets {
+        text-align: center;
+      }
+    }
+  }
+}

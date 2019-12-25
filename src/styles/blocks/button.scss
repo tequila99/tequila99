@@ -1,0 +1,35 @@
+@import '../assets/_mixins';
+.button {
+  background-color: #fff;
+  border-radius: 2.3rem;
+  border: 2px solid transparent;
+  padding: 1rem 0.8rem;
+  cursor: pointer;
+  @include phones {
+    padding: 1.3rem 1.8rem;
+  }
+
+  &__label {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    color: #0f5a47;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  &--dark {
+    background-color: #0f5a47;
+    .button__label {
+      color: #fff;
+    }
+  }
+  &__cancel {
+    background-color: transparent;
+    .button__label {
+      color: #0f5a47;
+      font-weight: 400;
+      text-transform: none;
+    }
+  }  
+}

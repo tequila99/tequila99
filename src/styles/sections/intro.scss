@@ -1,0 +1,98 @@
+@import '../assets/_variables.scss';
+@import '../assets/_mixins.scss';
+.intro {
+  background-color: $bg-intro;
+  position: relative;
+  display: flex;
+  @include phones {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__container {
+    margin: auto auto;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 14%;
+    @include tablets {
+      margin-top: 0;
+      align-items: center;
+    }
+    @include phones {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    }    
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:remy(512);
+    height:remy(648);
+    background: url('/images/intro/patt.png') no-repeat;
+    @include tablets {
+      width: 70%;
+      top: 0rem;
+      right: 0rem;
+    }
+  }
+  &__content {
+    
+    width: 50%;
+    @include tablets {
+      width: 80%;
+      margin-top: 1.5rem;
+    } 
+    @include tablets {
+      margin-top: -4rem;
+    }
+  }
+  &__footer {
+    margin-top: 7%;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    max-width:remy(500);
+    @include tablets {
+      max-width: 100%;
+      width: 100%;
+      margin-left: 2rem;
+      margin-bottom: 0rem;
+    }
+    @include phones {
+      margin-left: 0;
+      margin-rigth: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    width: 46%;
+    height: 84%;
+    // width: 514px;
+    // height: 641px;
+    z-index: 20;
+    background: url('/images/intro/background-new.png') center center / contain no-repeat;
+    &--main {
+      top: 44%;
+      right:1.3rem;
+      transform: translateY(-50%);
+    }
+    @include tablets {
+      position: static;
+      margin-top: -2rem;
+      width: 80%;
+      height: 31rem;
+      transform: none;
+      background: url('/images/intro/background-768.png') top center / contain no-repeat;
+    } 
+    @include phones {
+      margin-top: 0rem;   
+      width: 70%;   
+    }
+  }
+}

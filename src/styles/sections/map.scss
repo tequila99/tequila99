@@ -1,0 +1,9 @@
+@import '../assets/_mixins.scss';
+.map {
+  background: url('/images/map/background.png') center center / cover no-repeat;
+  position: relative;
+  display: flex;
+  @include tablets {
+    min-height: remy(734);
+  }
+}

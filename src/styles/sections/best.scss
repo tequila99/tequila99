@@ -1,0 +1,170 @@
+@import '../assets/_variables.scss';
+@import '../assets/_mixins.scss';
+.best {
+  background-color: $white;
+  color: $color;
+  position: relative;
+  display: flex;
+  @include phones {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: remy(-109);
+    left: 0;
+    width: remy(191);
+    height: remy(571);
+    background: url('/images/best/background.png') no-repeat;  
+    z-index: 10; 
+    @include tablets {
+      background: url('/images/best/rasb.png') no-repeat;
+      width: 100%;
+      height: 21rem;
+      left: 0;
+      bottom: -5.5rem;
+    } 
+    @include phones {
+      display: none;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top:remy(-61);
+    left: remy(30);
+    width: remy(59);
+    height: remy(112); 
+    z-index: 10;
+    background: url('/images/intro/leaf-3.png');     
+    @include tablets {
+      background: url('/images/best/leaf.png')  no-repeat;  
+      width: 100%;
+      height: 100%;
+      top: 12rem;
+      left: 0;
+    }
+    @include phones {
+      display: none;
+    }
+ 
+  }
+  &__container {
+    margin: 0 auto;
+    // padding-top: remy(102);
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    margin-top: remy(102);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      max-width: remy(450);
+    }
+    @include tablets {
+      margin-top: 1rem;
+    }
+  }
+  &__header-label {
+    margin: auto;
+    font-size: remy(48);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__header-caption {
+    color: $color-grey;
+    font-size: remy(18);
+    margin-top: remy(7);
+    text-align: center;
+  }
+  &__content {
+    // margin-top: remy(58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    @include tablets {
+      margin-top: 2.6rem;
+    }
+    @include phones {
+      margin-top: 4.3rem;
+    }
+    
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      // transform: translateY(-remy(20));
+      li {
+        max-width: 30%;
+        margin-right: 2.5%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:last-child {
+          margin-right: 0;
+          &:after {
+            content: '';
+            background: none;
+          }
+        }
+        &:after {
+          content: '';
+          background: url('/images/best/1.png');
+          position: absolute;
+          right: remy(-75);
+          top: remy(52);
+          width: remy(67);
+          height: remy(21);
+        }
+        @include tablets {
+          max-width: 25rem;
+          margin-right: 0;
+          margin-top: 1rem;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    @include tablets {
+      ul { 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        li {
+          margin-right: 0;
+          // max-width: 100%;
+          height: 30%;
+          &:after {
+            content: '';
+            background: none;
+          }
+        }
+      }
+    }
+    @include phones {
+      ul { 
+        flex-direction: column;        
+        width: 100%;
+        li {
+          margin-right: 0;
+          margin-top: 3.3rem;
+          max-width: 100%;
+          height: 30%;
+          &:after {
+            content: '';
+            background: none;
+          }
+        }
+      }
+    }    
+  }
+}

@@ -1,0 +1,42 @@
+@import '../assets/_mixins';
+.adv {
+  width: 100%;
+  ul {
+    width: 100%;
+    display: flex;
+    // justify-content: space-between;
+    li {      
+      margin-right: 46px;
+      @include tablets {
+        // margin-right: 5rem;
+        margin-right: 0;
+      }
+      :last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  &__item-label {
+    display: block;
+    flex: .8;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &-img {
+      min-width: 52px;
+      min-height: 52px;
+      display: flex;
+      margin-right: 7px;      
+      &--natural {
+        background: url('/images/intro/icon_natural.png') center center  no-repeat;
+      }
+      &--deliver {
+        background: url('/images/intro/icon_delver.png') center center no-repeat;
+      }
+      &--fit {
+        background: url('/images/intro/icon_fit.png') center center no-repeat;
+      }
+    }
+  }
+}
