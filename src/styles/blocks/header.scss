@@ -49,8 +49,14 @@
     width: 24px;
     height: 24px;
     align-self: center;
+    fill: #e8e8e8;
+    stroke: none;
     cursor: pointer;
-    background: url('../../images/intro/burger.svg') center center / cover no-repeat ;
+    transition: fill .3s;
+    &:hover {
+      fill: white;
+      stroke: white;
+    }
     @include laptop {
       display: block;
     }

@@ -8,14 +8,41 @@
   <title>Батончики</title>
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,900i&display=swap&subset=cyrillic"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./js/owlcarousel/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./js/owlcarousel/assets/owl.theme.default.min.css">  
+  <link rel="stylesheet" href="main.min.css" />
 </head>
 
 <body>
   <div class="wrapper">
+    <!-- <header class="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <div class="logo"></div>
+        </div>
+        <div class="header__menu">
+          <nav class="nav">
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Батончики</a></li>
+              <li><a href="#">Команда</a></li>
+              <li><a href="#">Меню</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Как мы работаем</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__contacts">
+          <div class="contact-phone">8 800 903 90 90</div>
+        </div>
+        <svg class="header__burger">
+          <use xlink:href="./images/icons/sprite.svg#menu"></use>
+        </svg>                    
+      </div>
+    </header> -->
+
+    <main class="main">
+      
+      <section class="section intro">
     <header class="header">
       <div class="container header__container">
         <div class="header__logo">
@@ -37,15 +64,14 @@
         <div class="header__contacts">
           <div class="contact-phone">8 800 903 90 90</div>
         </div>
-        <div class="header__burger"></div>
+        <svg class="header__burger">
+          <use xlink:href="./images/icons/sprite.svg#menu"></use>
+        </svg>                    
       </div>
-    </header>
-
-    <main class="main">
-      <section class="section intro">
+    </header>        
         <div class="container intro__container">
           <!-- <img
-              src="/img/intro/background-new.png"
+              src="/images/intro/background-new.png"
               alt=""
               class="intro__img intro__img--main"
             /> -->
@@ -66,11 +92,10 @@
             <div class="adv">
               <ul>
                 <li>
-                  <div class="adv__item">
-                    <!-- <div class="adv__item-img adv__item-img--natural"></div> -->
+                  <div class="adv__item">                    
                     <svg class="adv__item-img ">
                       <use xlink:href="./images/icons/sprite.svg#5"></use>
-                    </svg>
+                    </svg>                    
                     <span class="adv__item-label">
                       100% натуральный продукт
                     </span>
@@ -78,13 +103,17 @@
                 </li>
                 <li>
                   <div class="adv__item">
-                    <div class="adv__item-img adv__item-img--deliver"></div>
+                    <svg class="adv__item-img ">
+                      <use xlink:href="./images/icons/sprite.svg#6"></use>
+                    </svg>                    
                     <span class="adv__item-label">3-5 дней доставка по РФ</span>
                   </div>
                 </li>
                 <li>
                   <div class="adv__item">
-                    <div class="adv__item-img adv__item-img--fit"></div>
+                    <svg class="adv__item-img ">
+                      <use xlink:href="./images/icons/sprite.svg#4"></use>
+                    </svg>                    
                     <span class="adv__item-label">Не портит фигуру</span>
                   </div>
                 </li>
@@ -109,7 +138,12 @@
               <li>
                 <div class="best-item">
                   <div class="best-item__header">
-                    <div class="best-item__header-img best-item__header-img--useful"></div>
+                    <div class="best-item__header-img">
+                      <svg class="best-item__header-img--svg">
+                        <use xlink:href="./images/icons/sprite.svg#1"></use>
+                      </svg>                    
+                    </div>
+
                   </div>
                   <div class="best-item__content">
                     <h2 class="best-item__content-label">Полезно</h2>
@@ -123,7 +157,11 @@
               <li>
                 <div class="best-item">
                   <div class="best-item__header">
-                    <div class="best-item__header-img best-item__header-img--tasty"></div>
+                    <div class="best-item__header-img">
+                      <svg class="best-item__header-img--svg">
+                        <use xlink:href="./images/icons/sprite.svg#3"></use>
+                      </svg>                       
+                    </div>
                   </div>
                   <div class="best-item__content">
                     <h2 class="best-item__content-label">Вкусно</h2>
@@ -137,7 +175,11 @@
               <li>
                 <div class="best-item">
                   <div class="best-item__header">
-                    <div class="best-item__header-img best-item__header-img--nutrient"></div>
+                    <div class="best-item__header-img">
+                      <svg class="best-item__header-img--svg">
+                        <use xlink:href="./images/icons/sprite.svg#2"></use>
+                      </svg>                       
+                    </div>
                   </div>
                   <div class="best-item__content">
                     <h2 class="best-item__content-label">Питательно</h2>
@@ -161,11 +203,23 @@
               <li class="order__list-item">
                 <div class="order-main">
                   <div class="order-main__img">
-                    <img src="/img/order/main.png" alt="Батончик морские водоросли" />
+                    <img src="/images/order/main.png" alt="Батончик морские водоросли" />
                   </div>
                   <div class="order-main__content">
                     <button class="order-main__button">
+                      <svg class="order-main__button-img">
+                        <use xlink:href="./images/icons/sprite.svg#chocolate-bar"></use>
+                      </svg>                       
                       <span class="order-main__button-label">состав</span>
+                      <!-- <ul class='order-main__menu'>
+                        <li>Овёс</li>
+                        <li>Мор.водоросли</a></li>
+                        <li>Миндаль</li>
+                        <li>Сухое молоко</li>
+                        <li>Тыкв.семечки</li>
+                        <li>Зам.сахара</li>
+                        <li>Какао бобы</li>
+                      </ul> -->
                     </button>
                     <h3>Баночик "Морские водоросли"</h3>
                     <p>
@@ -200,7 +254,7 @@
               <li class="order__list-item">
                   <div class="order-main">
                     <div class="order-main__img">
-                      <img src="/img/order/main.png" alt="Батончик морские водоросли" />
+                      <img src="/images/order/main.png" alt="Батончик морские водоросли" />
                     </div>
                     <div class="order-main__content">
                       <button class="order-main__button">
@@ -240,7 +294,7 @@
                 <li class="order__list-item">
                     <div class="order-main">
                       <div class="order-main__img">
-                        <img src="/img/order/main.png" alt="Батончик морские водоросли" />
+                        <img src="/images/order/main.png" alt="Батончик морские водоросли" />
                       </div>
                       <div class="order-main__content">
                         <button class="order-main__button">
@@ -293,7 +347,7 @@
                 <div class="team__list-item">
                   <div class="team-member">
                     <div class="team-member__img">
-                      <img src="/img/team/boris.png" alt="Борис Федорович" />
+                      <img src="/images/team/boris.png" alt="Борис Федорович" />
                     </div>
                     <div class="team-member__content">
                       <h5 class='team-member__trigger'>Борис Федорович</h5>
@@ -312,7 +366,7 @@
                 <div class="team__list-item">
                   <div class="team-member">
                     <div class="team-member__img">
-                      <img src="/img/team/alla.png" alt="Алла Иванова" />
+                      <img src="/images/team/alla.png" alt="Алла Иванова" />
                     </div>
                     <div class="team-member__content">
                       <h5 class='team-member__trigger'>Алла Иванова</h5>
@@ -331,7 +385,7 @@
                 <div class="team__list-item">
                   <div class="team-member">
                     <div class="team-member__img">
-                      <img src="/img/team/kirill.png" alt="Кирилл Матросов" />
+                      <img src="/images/team/kirill.png" alt="Кирилл Матросов" />
                     </div>
                     <div class="team-member__content">
                       <h5 class='team-member__trigger'>Кирилл Матросов</h5>
@@ -350,7 +404,7 @@
                 <div class="team__list-item">
                   <div class="team-member">
                       <div class="team-member__img">
-                        <img src="/img/team/mila.png" alt="Мила Рыжкова" />
+                        <img src="/images/team/mila.png" alt="Мила Рыжкова" />
                       </div>
                       <div class="team-member__content">
                         <h5 class='team-member__trigger'>Мила Рыжкова</h5>
@@ -381,7 +435,7 @@
                 <li class='menu-acco__content-item'>
                   <div class="menu-acco__content menu-acco__content--milk">
                     <div class="menu-acco__trigger menu-acco__trigger--milk menu-acco__trigger--add">
-                      <span class="menu-acco__trigger-text">Дикие ягоды</span>
+                      <span class="menu-acco__trigger-text">Батончики с молоком</span>
                     </div>
                     <p class="menu-acco__text">
                       Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
@@ -392,10 +446,10 @@
                       конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш
                       современник стал особенно чутко относиться к слову.
                     </p>
-                    <div class="menu-acco__close">
+                      <svg class="menu-acco__close">
+                        <use xlink:href="./images/icons/sprite.svg#close"></use>
+                      </svg>
 
-                      </div>
-  
                   </div>
 
                 </li>
@@ -414,10 +468,10 @@
                       конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш
                       современник стал особенно чутко относиться к слову.
                     </p>
-                    <div class="menu-acco__close">
-
-                    </div>
-                  </div>
+                    <svg class="menu-acco__close">
+                      <use xlink:href="./images/icons/sprite.svg#close"></use>
+                    </svg>
+                </div>
                 </li>
                 <li class='menu-acco__content-item'>
                   <div class="menu-acco__content menu-acco__content--wildberry">
@@ -434,10 +488,10 @@
                       конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш
                       современник стал особенно чутко относиться к слову.
                     </p>
-                    <div class="menu-acco__close">
+                    <svg class="menu-acco__close">
+                      <use xlink:href="./images/icons/sprite.svg#close"></use>
+                    </svg>
 
-                      </div>
-  
                   </div>
 
                 </li>
@@ -450,10 +504,12 @@
                 <a class="menu-acco__trigger menu-acco__trigger--milk" href="#">
                   <span class="menu-acco__trigger-text">Батончики с молоком</span></a>
               </li>
-              <li class="menu-acco__item "><a class="menu-acco__trigger menu-acco__trigger--fruit" href="#">
+              <li class="menu-acco__item">
+                <a class="menu-acco__trigger menu-acco__trigger--fruit" href="#">
                   <span class="menu-acco__trigger-text">С мёдом и фруктами </span></a>
               </li>
-              <li class="menu-acco__item"><a class="menu-acco__trigger menu-acco__trigger--wildberry" href="#">
+              <li class="menu-acco__item">
+                <a class="menu-acco__trigger menu-acco__trigger--wildberry" href="#">
                   <span class="menu-acco__trigger-text">Дикие ягоды</span></a>
               </li>
             </ul>
@@ -472,7 +528,7 @@
                 <li class='review__item'>
                     <div class="review-item">
                         <div class="review-item__img">
-                          <img src="/img/review/alena.png" alt="Алёна Хмельницкая" />
+                          <img src="/images/review/alena.png" alt="Алёна Хмельницкая" />
                         </div>
                         <div class="review-item__content">
                           <h4>Лучший перекус</h4>
@@ -491,7 +547,7 @@
                 <li class='review__item'>
                     <div class="review-item">
                         <div class="review-item__img">
-                          <img src="/img/review/maria.png" alt="Мария Орлова" />
+                          <img src="/images/review/maria.png" alt="Мария Орлова" />
                         </div>
                         <div class="review-item__content">
                           <h4>Лучшие батончики 
@@ -515,7 +571,7 @@
                 <li class='review__item'>
                     <div class="review-item">
                         <div class="review-item__img">
-                          <img src="/img/review/boy.png" alt="Какой-то паренек" />
+                          <img src="/images/review/boy.png" alt="Какой-то паренек" />
                         </div>
                         <div class="review-item__content">
                           <h4>Лучший перекус</h4>
@@ -538,21 +594,21 @@
                       <li>
                         <div class="user-nav__item active">
                           <div class="avatar">
-                            <img src="/img/review/alena-thmb.png" alt="Алена Хмельницкая" />
+                            <img src="/images/review/alena-thmb.png" alt="Алена Хмельницкая" />
                           </div>
                         </div>
                       </li>
                       <li>
                         <div class="user-nav__item">
                           <div class="avatar">
-                            <img src="/img/review/girl-thumb.png" alt="Какая-то девочка" />
+                            <img src="/images/review/girl-thumb.png" alt="Какая-то девочка" />
                           </div>
                         </div>
                       </li>
                       <li>
                         <div class="user-nav__item">
                           <div class="avatar">
-                            <img src="/img/review/boy-thmb.png" alt="Какой-то паренек" />
+                            <img src="/images/review/boy-thmb.png" alt="Какой-то паренек" />
                           </div>
                         </div>
                       </li>
@@ -571,7 +627,7 @@
             <h3>Как мы работаем</h3>
           </div>
           <div class="work__content">
-            <img src="/img/work/palyer.png" alt="" />
+            <img src="/images/work/palyer.png" alt="" />
           </div>
         </div>
       </section>
@@ -687,10 +743,41 @@
           <span class="address">Москва, ул.Новый Арбат, д.31/12</span>
           <a class="contact-phone contact-phone--small">8 800 903 90 90</a>
         </div>
-        <div class="footer__socials"></div>
+        <div class="footer__socials">
+          <ul class="socials">
+            <li>
+              <a href="#" class="socials__link">
+                <svg class="socials__image">
+                  <use xlink:href="./images/icons/sprite.svg#vk"></use>
+                </svg>                       
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socials__link">
+                <svg class="socials__image socials__image--active">
+                  <use xlink:href="./images/icons/sprite.svg#f"></use>
+                </svg>                       
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socials__link">
+                <svg class="socials__image">
+                  <use xlink:href="./images/icons/sprite.svg#in"></use>
+                </svg>                       
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socials__link">
+                <svg class="socials__image">
+                  <use xlink:href="./images/icons/sprite.svg#tv"></use>
+                </svg>                       
+              </a>
+            </li>                                    
+          </ul>
+        </div>
       </div>
     </footer>
-    <ul class="fixed-menu">
+    <!-- <ul class="fixed-menu">
       <li class="fixed-menu__item">
         <a class="fixed-menu__dot fixed-menu__dot--active" href="#" aria-label="О нас"></a>
       </li>
@@ -715,18 +802,19 @@
       <li class="fixed-menu__item">
         <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
       </li>
-    </ul>
+    </ul> -->
   </div>
   <div class="overlay">
     <div class="overlay__container">
       <p class="overlay__text"></p>
-      <div class="overlay__close">
-      </div>
+        <svg class="overlay__close">
+          <use xlink:href="./images/icons/sprite.svg#close"></use>
+        </svg>        
     </div>
   </div>
   <div class="hamburger-menu">
       <div class="logo hamburger-menu__logo">
-        <!-- <a class="logo" href="#"><img src="./img/intro/logo.png"></a> -->
+        <!-- <a class="logo" href="#"><img src="./images/intro/logo.png"></a> -->
       </div>
       <div class="hamburger-menu__items">
         <nav class="nav nav__hamburger">
@@ -741,15 +829,13 @@
                 </ul>
         </nav>
       </div>
-      <a class="hamburger-menu__close" href="#">
-        <!-- <svg class="hamburger-menu__close-icon">
-          <use xlink:href="./img/sprite/sprite.svg#close"></use>
-        </svg> -->
-      </a>
+        <svg class="hamburger-menu__close">
+          <use xlink:href="./images/icons/sprite.svg#close"></use>
+        </svg>
     </div>  
-  <script src="./js/jquery/jquery-3.4.1.min.js"></script>
-  <script src="./js/owlcarousel/owl.carousel.min.js"></script>
-  <script src="./main.js"></script>
+  <!-- <script src="./js/jquery/jquery-3.4.1.min.js"></script>
+  <script src="./js/owlcarousel/owl.carousel.min.js"></script> -->
+  <script src="./main.min.js"></script>
 </body>
 
 </html>/

@@ -92,7 +92,12 @@
     top: 26px;
     right: 32px;
     cursor: pointer;
-    background: url('/images/menu/close.svg') center center no-repeat;
+    // background: url('/images/menu/close.svg') center center no-repeat;
+    fill: #ccc;
+    stroke: none;
+    &:hover {
+      fill: white;
+    }
   }
   &__item {
     width: 100px;
