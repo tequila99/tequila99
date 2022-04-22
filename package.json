@@ -20,7 +20,7 @@
   "homepage": "https://github.com/tequila99/tequila99#readme",
   "dependencies": {
     "deep-extend": "^0.5.1",
-    "fullpage.js": "^3.0.8",
+    "fullpage.js": "^4.0.5",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "owl.carousel": "^2.3.4"
